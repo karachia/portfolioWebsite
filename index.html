@@ -6,34 +6,139 @@
 	<title>Sina Karachiani</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="assets/css/style.css" />
-	<!-- <link rel="shortcut icon" href="assets/images/planet_earth.ico" /> -->
+	<link rel="shortcut icon" href="assets/images/code.ico" />
+  <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
 	<meta name="viewport" content="width=device-width">
 
 </head>
 
 <body>
+<header>
+  
+  <!-- Nav Bar -->
+  <div class="navbar" id="myTopnav">
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="hideNavbar">&#9776;</a>
+    <div class="leftNav">
+      <span id="name">Sina Karachiani</span>  
+      <a href="">Git</a>
+      <a href="">Link</a>
+      <a href="">SC</a>
+    </div>
 
-<section id="home">
-	<h1 id="title">Sina Karachiani</h1>
-	<p id="subtitle">Composer &amp; Software Developer</p>
-	<p>Los Angeles, CA</p>
-</section>
+    <div class="rightNav">
+     
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#music">Music</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    
+    </div>
+  </div>
+</header>
 
-<section id="about">
-	<p>Hi, I'm Sina.</p>
-	<p>blah blah</p>
-</section>
+  <div class="main">
 
-<section id="education"><h2>Education</h2></section>
+  <!-- Home and the large image -->
+  <!-- <section id="home"> -->
+    <div class="hero-image" id="home">
+      <div class="hero-text">
+        <h1 style="font-size:50px">Sina Karachiani</h1>
+        <p>Composer &amp; Software Developer</p>
+        <p>Los Angeles, CA</p>
+        
+        <!-- links to other websites -->
+        <p>
+          <div id=links>
+            <a href="https://github.com/karachia">
+              <i class="fa fa-github" aria-hidden="true"></i>  
+            </a>
 
-<section id="projects"><h2>Projects</h2></section>
+            <a href="">
+              <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            </a>
 
-<section id="skills"></section>
+            <a href="">
+              <i class="fa fa-soundcloud" aria-hidden="true"></i>
+            </a>
 
-<section id="work"><h2>Work Experience</h2></section>
+            <a href="">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </p>
+      </div>
+    </div>
+  <!-- </section> -->
 
-<section id="contact"></section>
 
+
+  <section id="about">
+    <h2>About me</h2>
+    <p>Hi, I'm Sina.</p>
+    <p>blah blah</p>
+  </section>
+
+  <section id="projects"><h2>Projects</h2></section>
+
+  <section id="resume"><h2>Resume</h2>
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'education')">Education</button>
+      <button class="tablinks" onclick="openTab(event, 'work')">Work Experience</button>
+      <button class="tablinks" onclick="openTab(event, 'volunteer')">Volunteer work</button>
+      <button class="tablinks" onclick="openTab(event, 'resProject')">Projects</button>
+      <button class="tablinks" onclick="openTab(event, 'skills')">Skills</button>
+      <button class="tablinks" onclick="openTab(event, 'honors')">Honors &amp; Awards</button>
+    </div>
+
+  <div id="education" class="tabcontent">
+
+    <p>USC</p>
+    <p>IVC</p>
+    <p>Shahid Ejei High School</p>
+  </div>
+
+  <div id="work" class="tabcontent">
+
+    <p>Work</p> 
+  </div>
+
+  <div id="volunteer" class="tabcontent">
+
+    <p>ISCF</p>
+  </div>
+
+  <div id="resProject" class="tabcontent">
+
+    <p>my projects go here</p>
+  </div>
+
+  <div id="skills" class="tabcontent">
+
+    <p>I have skills</p>
+  </div>
+
+  <div id="honors" class="tabcontent">
+
+    <p>I have honors</p>
+  </div>
+
+
+  </section>
+  <section id="contact"></section>
+  <!-- <section id="music"><h2>Music</h2></section> -->
+
+  <!-- <section id="education"><h2>Education</h2></section>
+
+  <section id="projects"><h2>Projects</h2></section>
+
+  <section id="skills"></section>
+
+  <section id="work"><h2>Work Experience</h2></section>
+
+  <section id="contact"></section> -->
+  </div>
 
 
 
