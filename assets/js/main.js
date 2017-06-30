@@ -61,12 +61,16 @@ var HTMLprojectDates = '<div class="date-text">%data%</div>';
 var HTMLprojectDescription = '<p><br>%data%</p>';
 var HTMLprojectImage = '<img src="%data%">';
 
-var HTMLschoolStart = '<div class="education-entry"></div>';
-var HTMLschoolName = '<a href="#">%data%';
-var HTMLschoolDegree = ' -- %data%</a>';
-var HTMLschoolDates = '<div class="date-text">%data%</div>';
-var HTMLschoolLocation = '<div class="location-text">%data%</div>';
-var HTMLschoolMajor = '<em><br>Major: %data%</em>';
+// var HTMLschoolStart = '<div class="education-entry"></div>';
+// var HTMLschoolName = '<table style="border-collapse:collapse;"><tbody><tr><td style="padding:5px;"><img src="%data%"';
+// var HTMLalt = ' alt="%data%"></td>'
+// var HTMLschoolName = '<table style="border-collapse:collapse;"><tbody><tr><td style="padding:5px;">%data%</td>';
+// var HTMLschoolLocation = '<td style="padding:5px;">%data%</td></tr>';
+// var HTMLschoolDegree = '<tr><td style="padding:5px;">%data%</td>';
+// var HTMLschoolDates = '<td style="padding:5px;">%data%</td></tr>';
+// var HTMLinfo = '<tr><td style="padding:5px;">%data%</td>';
+// var HTMLgpa = '<td style="padding:5px;">%data%</td></tr></tbody></table>';
+var HTMLeducationSection = '<table style="border-collapse:collapse;"><tbody><tr><td style="padding:5px;"><img src="%data1%" alt="%data2%" height="48" width="251"></td></td><td style="padding:5px;">%data3%</td></tr><tr><td style="padding:5px;">%data4%</td><td style="padding:5px;">%data5%</td></tr><tr><td style="padding:5px;">%data6%</td><td style="padding:5px;">GPA: %data7%</td></tr></tbody></table>';
 
 
 var internationalizeButton = '<button>Internationalize</button>';
@@ -89,31 +93,51 @@ var bio = {
 
 var education = {
 	"schools": [{
-			"name": "Irvine Valley College",
-			"location": "Irvine, CA",
-			"degree": "Associate degree",
-			"major": "Computer Science, Music Composition",
-			"dates:": "2013 - 2016",
-			"url": "http://www.ivc.edu"
-		}, {
-			"name": "University of Southern California",
+			//link to image of school logo
+			"name": "assets\\images\\usc2.png",
+			"alt" : "University of Southern California",
 			"location": "Los Angeles, CA",
-			"degree": "Bachelors",
-			"major": "Computer Science, Music Composition",
-			"dates:": "2016 - 2020",
-			"url": "http://www.usc.edu"
+			"degree": "B.S. Computer Science <br /> B.M. Music Composition",
+			"dates": "2016 - 2019",
+			"info": "Dean's List",
+			"GPA" : "3.9"
 		}, {
-			"name": "Shahid Ejei High School",
+			//link to image of school logo
+			"name": "assets\\images\\ivc.png",
+			"alt": "Irvine Valley College",
+			"location": "Irvine, CA",
+			"degree": "A.S. Math, A.S. Physics, A.A. Music",
+			"dates": "2013 - 2016",
+			"info": "summa cum laude, Honors Program, Dean's list",
+			"GPA" : "4.0"
+		}, {
+			//link to image of school logo
+			"name": "assets\\images\\nodet.png",
+			"alt": "Shahid Ejei High School of Excptional Talents",
 			"location": "Esfahan, Iran",
-			"degree": "Diploma",
-			"major": "Physics and Mathematics",
-			"dates:": "2010 - 2013",
-			"url": "None"
+			"degree": "Diploma in Physics &amp; Mathematics",
+			"dates": "2010 - 2013",
+			"info": "",
+			"GPA" : "3.83"
 		}
-
-
 	]
 };
+
+
+education.display = function() {
+	for (school in education.schools){
+		var formattedEducationSection = HTMLeducationSection.replace("%data1%", education.schools[school].name);
+		formattedEducationSection = formattedEducationSection.replace("%data2%", education.schools[school].alt);
+		formattedEducationSection = formattedEducationSection.replace("%data3%", education.schools[school].location);
+		formattedEducationSection = formattedEducationSection.replace("%data4%", education.schools[school].degree);
+		formattedEducationSection = formattedEducationSection.replace("%data5%", education.schools[school].dates);
+		formattedEducationSection = formattedEducationSection.replace("%data6%", education.schools[school].info);
+		formattedEducationSection = formattedEducationSection.replace("%data7%", education.schools[school].GPA);
+		$("#education").append(formattedEducationSection);
+	}
+
+};
+
 
 var work = {
 	"jobs": [{
@@ -181,18 +205,7 @@ bio.display = function() {
 
 };
 
-education.display = function() {
-	for (school in education.schools){
-		$("#education").append(HTMLschoolStart);
-		var formattedName = HTMLschoolName.replace("%data%", education.schools[school].name);
-		var formattedDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
-		var formattedLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
-		var formattedMajor = HTMLschoolMajor.replace("%data%", education.schools[school].major);
-		var formattedDates = HTMLschoolDates.replace("%data%", education.schools[school].dates);
-	}
 
-	$(".education-entry:last").append(formattedName, formattedLocation, formattedDegree, formattedMajor, formattedDates);
-};
 
 
 

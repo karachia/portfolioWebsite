@@ -192,30 +192,34 @@ h2 {
     color: #FEF5E7;
 }
 
-.hero-text button {
+/*.hero-text button {
     border: none;
     outline: 0;
     display: inline-block;
     padding: 10px 25px;
-    color: black;
+    color: blue;
     background-color: #ddd;
     text-align: center;
     cursor: pointer;
-}
+}*/
 
-.hero-text button:hover {
+/*.hero-text button:hover {
     background-color: #555;
-    color: white;
-}
+    color: #F9E79F;
+}*/
 
 #links {
-    font-size: 60px
+    font-size: 60px;
 }
 
 #links a {
     color: #FEF5E7;
     text-decoration: none;
     padding: 6px;
+}
+
+#links i:hover {
+    color: #F9E79F;
 }
 
 #links a:visited {
