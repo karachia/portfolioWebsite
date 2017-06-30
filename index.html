@@ -1,135 +1,126 @@
 <!DOCTYPE html>
 <html>
-<head>
-<!-- Google map api key -->
-<!-- AIzaSyAQZam34JcxlXP2pxpZ066SesCNBSFH4fA -->
-	<title>Sina Karachiani</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="assets/css/style.css" />
-	<link rel="shortcut icon" href="assets/images/code.ico" />
-  <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
-	<meta name="viewport" content="width=device-width">
 
+<head>
+    <title>Sina Karachiani</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="shortcut icon" href="assets/images/code.ico" />
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
 </head>
 
 <body>
-<header>
-  
-  <!-- Nav Bar -->
-  <div class="navbar" id="myTopnav">
-    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="hideNavbar">&#9776;</a>
-    <div class="leftNav">
-      <span id="name">Sina Karachiani</span>  
-      <a href="">Git</a>
-      <a href="">Link</a>
-      <a href="">SC</a>
-    </div>
-
-    <div class="rightNav">
-     
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#music">Music</a>
-      <a href="#projects">Projects</a>
-      <a href="#resume">Resume</a>
-      <a href="#contact">Contact</a>
-    
-    </div>
-  </div>
-</header>
-
-  <div class="main">
-
-  <!-- Home and the large image -->
-  <!-- <section id="home"> -->
+    <header id="top">
+        <!-- Nav Bar -->
+        <div class="navbar" id="myTopnav">
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="hideNavbar">&#9776;</a>
+            <!-- Left  -->
+            <div class="leftNav">
+                <span id="name" style="font-family: 'Bellefair'; font-size: 18px; margin-right: 20px;">Sina Karachiani</span>
+                <a href="https://github.com/karachia" target="_blank">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/sina-karachiani-5b9b8593/" target="_blank">
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                </a>
+                <a href="https://soundcloud.com/sinakarachiani" target="_blank">
+                    <i class="fa fa-soundcloud" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/sina_karachiani/" target="_blank">
+                    <i class="fa fa-instagram" aria-hidden="true" style="margin-right: 12px;"></i>
+                </a>
+            </div>
+            <!-- right -->
+            <div class="rightNav">
+                <a href="#top">Home</a>
+                <a href="#about">About</a>
+                <a href="#music">Music</a>
+                <a href="#projects">Projects</a>
+                <a href="#resume">Résumé</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </header>
+    <!-- Home and the large image -->
+    <!-- <section id="home"> -->
     <div class="hero-image" id="home">
-      <div class="hero-text">
-        <h1 style="font-size:50px">Sina Karachiani</h1>
-        <p>Composer &amp; Software Developer</p>
-        <p>Los Angeles, CA</p>
-        
-        <!-- links to other websites -->
-        <p>
-          <div id=links>
-            <a href="https://github.com/karachia">
-              <i class="fa fa-github" aria-hidden="true"></i>  
-            </a>
-
-            <a href="">
-              <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-            </a>
-
-            <a href="">
-              <i class="fa fa-soundcloud" aria-hidden="true"></i>
-            </a>
-
-            <a href="">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-            </a>
-          </div>
-        </p>
-      </div>
+        <div class="hero-text">
+            <h1 style="font-size:56px; font-family: 'serif';">Sina Karachiani</h1>
+            <p style="font-size:22px;">Composer &amp; Software Developer</p>
+            <p>~Los Angeles, CA~</p>
+            <!-- links to other websites -->
+            <p>
+                <div id=links>
+                    <a href="https://github.com/karachia" target="_blank">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sina-karachiani-5b9b8593/" target="_blank">
+                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://soundcloud.com/sinakarachiani" target="_blank">
+                        <i class="fa fa-soundcloud" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.instagram.com/sina_karachiani/" target="_blank">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </p>
+        </div>
     </div>
-  <!-- </section> -->
-
-
-
-  <section id="about">
-    <h2>About me</h2>
-    <p>Hi, I'm Sina.</p>
-    <p>blah blah</p>
-  </section>
-
-  <section id="projects"><h2>Projects</h2></section>
-
-  <section id="resume"><h2>Resume</h2>
-    <div class="tab">
-      <button class="tablinks" onclick="openTab(event, 'education')">Education</button>
-      <button class="tablinks" onclick="openTab(event, 'work')">Work Experience</button>
-      <button class="tablinks" onclick="openTab(event, 'volunteer')">Volunteer work</button>
-      <button class="tablinks" onclick="openTab(event, 'resProject')">Projects</button>
-      <button class="tablinks" onclick="openTab(event, 'skills')">Skills</button>
-      <button class="tablinks" onclick="openTab(event, 'honors')">Honors &amp; Awards</button>
+    <!-- </section> -->
+    <div class="main">
+        <section id="about">
+            <div id="aboutBody">
+                <h2 class="has-lines">About me</h2>
+                <p style="font-size: 28px;">Hi, I'm Sina!</p>
+                <p>Welcome to my portfolio website. I am a Los Angeles based concert music composer as well as a software engineer. <br /> I'm currently studying both fields at University of Southern California.
+                <img src="assets/images/victory.png" alt="<Fight On>" height="36" width="36"> </p>
+                <p>I am passionate about music, technology, aircraft and aviation, architecture and urban planning, and mass transit. </p> 
+                <p>Feel free to shoot me a message or follow me on social media to stay tuned about any upcoming events and performances.</p>
+            </div>
+        </section>
+        <section id="projects">
+            <h2 class="has-lines">Projects</h2></section>
     </div>
 
-  <div id="education" class="tabcontent">
-
-    <p>USC</p>
-    <p>IVC</p>
-    <p>Shahid Ejei High School</p>
-  </div>
-
-  <div id="work" class="tabcontent">
-
-    <p>Work</p> 
-  </div>
-
-  <div id="volunteer" class="tabcontent">
-
-    <p>ISCF</p>
-  </div>
-
-  <div id="resProject" class="tabcontent">
-
-    <p>my projects go here</p>
-  </div>
-
-  <div id="skills" class="tabcontent">
-
-    <p>I have skills</p>
-  </div>
-
-  <div id="honors" class="tabcontent">
-
-    <p>I have honors</p>
-  </div>
-
-
-  </section>
-  <section id="contact"></section>
-  <!-- <section id="music"><h2>Music</h2></section> -->
-
-  <!-- <section id="education"><h2>Education</h2></section>
+    <section id="resume">
+        <h2 class="has-lines">Résumé</h2>
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'education')">Education</button>
+            <button class="tablinks" onclick="openTab(event, 'work')">Work Experience</button>
+            <button class="tablinks" onclick="openTab(event, 'volunteer')">Volunteer work</button>
+            <button class="tablinks" onclick="openTab(event, 'resProject')">Projects</button>
+            <button class="tablinks" onclick="openTab(event, 'skills')">Skills</button>
+            <button class="tablinks" onclick="openTab(event, 'honors')">Honors &amp; Awards</button>
+        </div>
+        <div class="main">
+            <div id="education" class="tabcontent">
+                <p>USC</p>
+                <p>IVC</p>
+                <p>Shahid Ejei High School</p>
+            </div>
+            <div id="work" class="tabcontent">
+                <p>Work</p>
+            </div>
+            <div id="volunteer" class="tabcontent">
+                <p>ISCF</p>
+            </div>
+            <div id="resProject" class="tabcontent">
+                <p>my projects go here</p>
+            </div>
+            <div id="skills" class="tabcontent">
+                <p>I have skills</p>
+            </div>
+            <div id="honors" class="tabcontent">
+                <p>I have honors</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="main"></section>
+    <!-- <section id="music"><h2>Music</h2></section> -->
+    <!-- <section id="education"><h2>Education</h2></section>
 
   <section id="projects"><h2>Projects</h2></section>
 
@@ -138,84 +129,14 @@
   <section id="work"><h2>Work Experience</h2></section>
 
   <section id="contact"></section> -->
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
-	<!-- where map goes -->
-	<div id="map"></div>
-<script src="assets/js/jQuery.js"></script>
-<script src="assets/js/main.js"></script>
-<!-- footre -->
-<footer id="footer">
-	<p class="copyright">&copy; Sina Karachiani 2017</p>
-</footer>
-
-
-<script>
-	var output = "";
-      function initMap() {
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 3,
-          center: {lat: 20, lng: 0}
-        });
-        var geocoder = new google.maps.Geocoder;
-        var infowindow = new google.maps.InfoWindow;
-
-        document.getElementById('submit').addEventListener('click', function() {
-          geocodeLatLng(geocoder, map, infowindow);
-        });
-      }
-
-      function geocodeLatLng(geocoder, map, infowindow) {
-        var latlng = {lat: parseFloat(document.getElementById('latInput').value), lng: parseFloat(document.getElementById('longInput').value)};
-        geocoder.geocode({'location': latlng}, function(results, status) {
-          if (status === 'OK') {
-            if (results[1]) {
-              map.setCenter(latlng);
-              map.setZoom(11);
-              var marker = new google.maps.Marker({
-                position: latlng,
-                map: map
-              });
-              infowindow.setContent(results[1].formatted_address);
-              infowindow.open(map, marker);
-              output = results[1].formatted_address;
-              console.log(output);
-              $("#result").append(output);
-              
-            } else {
-              window.alert('No results found');
-            }
-          } else {
-            window.alert('Geocoder failed due to: ' + status);
-          }
-        });
-      }
-
-      
-      
-    </script>
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQZam34JcxlXP2pxpZ066SesCNBSFH4fA&callback=initMap" async defer></script>
+    <!-- where map goes -->
+    <div id="map"></div>
+    <script src="assets/js/jQuery.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- footre -->
+    <footer id="footer" class="main">
+        <p class="copyright">&copy; Sina Karachiani 2017</p>
+    </footer>
 </body>
+
 </html>

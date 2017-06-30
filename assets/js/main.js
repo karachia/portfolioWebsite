@@ -1,11 +1,10 @@
-
 function hideNavbar() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "navbar") {
-        x.className += " responsive";
-    } else {
-        x.className = "navbar";
-    }
+	var x = document.getElementById("myTopnav");
+	if (x.className === "navbar") {
+		x.className += " responsive";
+	} else {
+		x.className = "navbar";
+	}
 }
 
 // function changeIcon(x) {
@@ -14,17 +13,17 @@ function hideNavbar() {
 
 
 function openTab(evt, tabName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(tabName).style.display = "block";
-    evt.currentTarget.className += " active";
+	var i, tabcontent, tablinks;
+	tabcontent = document.getElementsByClassName("tabcontent");
+	for (i = 0; i < tabcontent.length; i++) {
+		tabcontent[i].style.display = "none";
+	}
+	tablinks = document.getElementsByClassName("tablinks");
+	for (i = 0; i < tablinks.length; i++) {
+		tablinks[i].className = tablinks[i].className.replace(" active", "");
+	}
+	document.getElementById(tabName).style.display = "block";
+	evt.currentTarget.className += " active";
 }
 
 
@@ -32,7 +31,7 @@ function openTab(evt, tabName) {
 /*
 This is empty on purpose! Your code to build the resume will go here.
  */
- var HTMLheaderName = '<h1 id="name">%data%</h1>';
+var HTMLheaderName = '<h1 id="name">%data%</h1>';
 var HTMLheaderRole = '<span>%data%</span><hr>';
 
 var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="white-text">%data%</span></li>';
@@ -154,7 +153,7 @@ var projects = {
 
 
 
-//we could also declare this out side of the object as the following:
+//Note for self: I could also declare this out side of the object as the following:
 /*projects.display = function(){....} 
 or just inside the object itself:
 	"display" : function(){ ....}
@@ -182,18 +181,18 @@ bio.display = function() {
 
 };
 
-// education.display = function() {
-// 	for (school in education.schools){
-// 		$("#education").append(HTMLschoolStart);
-// 		var formattedName = HTMLschoolName.replace("%data%", education.schools[school].name);
-// 		var formattedDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
-// 		var formattedLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
-// 		var formattedMajor = HTMLschoolMajor.replace("%data%", education.schools[school].major);
-// 		var formattedDates = HTMLschoolDates.replace("%data%", education.schools[school].dates);
-// 	}
+education.display = function() {
+	for (school in education.schools){
+		$("#education").append(HTMLschoolStart);
+		var formattedName = HTMLschoolName.replace("%data%", education.schools[school].name);
+		var formattedDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
+		var formattedLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
+		var formattedMajor = HTMLschoolMajor.replace("%data%", education.schools[school].major);
+		var formattedDates = HTMLschoolDates.replace("%data%", education.schools[school].dates);
+	}
 
-// 	$(".education-entry:last").append(formattedName, formattedLocation, formattedDegree, formattedMajor, formattedDates);
-// };
+	$(".education-entry:last").append(formattedName, formattedLocation, formattedDegree, formattedMajor, formattedDates);
+};
 
 
 
@@ -250,7 +249,7 @@ function inName() {
 
 //display 
 bio.display();
-// education.display();
+education.display();
 work.display();
 projects.display();
 
