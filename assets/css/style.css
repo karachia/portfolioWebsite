@@ -1,11 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+
 body,
 html {
     height: 100%;
     margin: 0;
 }
-h2 {
+
+.section {
+    margin: 20px;
+    padding: 0px;
+}
+
+h2.section {
     font-family: Bellefair;
-    font-size:40px;
+    font-size: 40px;
     color: #A6ACAF;
     font-style: normal;
     /*text-align: center;*/
@@ -17,39 +28,46 @@ h2 {
     margin-bottom: 0px;
     margin-top: 48px;
     height: 800px;
+}
 
+.right {
+  float: right;
 }
 
 .has-lines {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
+
 .has-lines:before,
 .has-lines:after {
-  content: '';
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  height: 1px;
-  background: #ccc;
-  min-width: 20px;
-  display: inline-block;
-  vertical-align: middle;
+    content: '';
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    height: 1px;
+    background: #ccc;
+    min-width: 20px;
+    display: inline-block;
+    vertical-align: middle;
 }
+
 .has-lines:before {
-  margin-right: 20px;
+    margin-right: 20px;
 }
+
 .has-lines:after {
-  margin-left: 20px;
+    margin-left: 20px;
 }
+
 
 /*=======================Fixed navbar=================*/
 
@@ -82,6 +100,7 @@ h2 {
 }
 
 
+
 /* Style the links inside the navigation bar */
 
 .navbar a {
@@ -103,6 +122,7 @@ h2 {
 }
 
 
+
 /* Change the color of links on hover */
 
 .navbar a:hover {
@@ -115,12 +135,14 @@ h2 {
 }
 
 
+
 /* Add a color to the active/current link */
 
 .navbar a.active {
     background-color: #4CAF50;
     color: white;
 }
+
 
 
 /*=================responsive navbar=====================*/
@@ -161,11 +183,12 @@ h2 {
     margin: 0px;
     padding: 0px;
 
-    
+
     /*padding-top: 16px;
   margin-top: 49px;
   height: 800px; */
 }
+
 
 
 /*=================big hero image=========================*/
@@ -178,7 +201,6 @@ h2 {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-
 }
 
 .hero-text {
@@ -192,6 +214,7 @@ h2 {
     color: #FEF5E7;
 }
 
+
 /*.hero-text button {
     border: none;
     outline: 0;
@@ -202,6 +225,7 @@ h2 {
     text-align: center;
     cursor: pointer;
 }*/
+
 
 /*.hero-text button:hover {
     background-color: #555;
@@ -227,10 +251,13 @@ h2 {
     text-decoration: none;
 }
 
-/*=======================About Me====================*/
-#about {
 
-    margin : 0px;
+/*=======================About Me====================*/
+
+#about {
+    /*    margin-right: 0px;
+    margin-left: 0px;*/
+    margin-bottom: 45px;
     padding: 1px;
     text-align: center;
     color: #1B2631;
@@ -238,29 +265,175 @@ h2 {
     font-family: Palatino;
     font-style: italic;
     background-color: #FDFEFE;
-    
 }
+
 
 /*#aboutBody {
     margin: 50px;
 }*/
 
 
+/*======================= Projects =======================*/
+
+.size {
+    /*height: 100px;
+  width: 100px;
+  margin: 10px; 
+  padding: 10px;*/
+}
+
+.row {
+    text-align: center;
+    margin: auto;
+}
+
+.col {
+    vertical-align: top;
+    display: inline-block;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,700;);
+.projImgEffect {
+    /*background-color: #F8F9F9;*/
+    color: #fff;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    margin: 20px;
+    max-width: 315px;
+    min-width: 230px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.projImgEffect * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.45s ease;
+    transition: all 0.45s ease;
+}
+
+.projImgEffect:before,
+.projImgEffect:after {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-top: 50px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 50px solid rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '';
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    z-index: 1;
+    opacity: 0;
+}
+
+.projImgEffect:before {
+    -webkit-transform: scaleY(2);
+    transform: scaleY(2);
+}
+
+.projImgEffect:after {
+    -webkit-transform: scaleY(2);
+    transform: scaleY(2);
+}
+
+.projImgEffect img {
+    vertical-align: top;
+    max-width: 100%;
+    backface-visibility: hidden;
+}
+
+.projImgEffect figcaption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.1em;
+    opacity: 0;
+    z-index: 2;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.projImgEffect h3 {
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.projImgEffect h3 span {
+    margin-top: 10px;
+    display: block;
+    font-weight: 100;
+    font-size: .7em;
+}
+
+.projImgEffect a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+
+.projImgEffect:hover>img,
+.projImgEffect.hover>img {
+    opacity: 0.7;
+}
+
+.projImgEffect:hover:before,
+.projImgEffect.hover:before,
+.projImgEffect:hover:after,
+.projImgEffect.hover:after {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+
+.projImgEffect:hover figcaption,
+.projImgEffect.hover figcaption {
+    opacity: 1;
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
 
 
 
-
-
-
+#projects {
+    background-color: #F8F9F9;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 1px;
+    padding-bottom: 15px;
+}
 
 
 
 /*=========================Resume section======================*/
+
+
 /*Style the tab */
+
 #resume {
     width: 100%;
     margin: 0px;
     padding: 0px;
+    clear: both;
+    background-color: white;
 }
 
 div.tab {
@@ -270,6 +443,32 @@ div.tab {
     background-color: #f1f1f1;
 }
 
+img.logo {
+    width: 65px;
+    height: 65px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    float: left;
+    display: inline-block;
+    margin-left: -95px;
+    margin-top: -8px;
+    background-color: #fff;
+    opacity: 0.8;
+    z-index: 0;
+    /*filter: grayscale(100%);*/
+    /*-webkit-filter: grayscale(100%);*/
+    /*For Webkit browsers */
+    /*filter: gray;*/
+    /* For IE 6 - 9 */
+    -webkit-transition: all .4s ease;
+}
+
+img.logo:hover {
+    -webkit-filter: drop-shadow(0px 8px 10px black) brightness(2); /* Safari */
+    filter: drop-shadow(0px 8px 10px black) brightness(2);
+
+}
 
 /* Style the buttons inside the tab */
 
@@ -285,11 +484,13 @@ div.tab button {
 }
 
 
+
 /* Change background color of buttons on hover */
 
 div.tab button:hover {
     background-color: #ddd;
 }
+
 
 
 /* Create an active/current tablink class */
@@ -299,13 +500,24 @@ div.tab button.active {
 }
 
 
+
 /* Style the tab content */
 
 .tabcontent {
+    display: block;
+    margin: auto;
     display: none;
     padding: 6px 12px;
     -webkit-animation: fadeEffect 1s;
     animation: fadeEffect 1s;
+    width: 40%;
+
+}
+
+.subContent {
+  margin-bottom: 80px;
+  margin-left: 20px;
+  margin-top: 50px;
 }
 
 

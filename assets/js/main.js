@@ -10,6 +10,11 @@ function hideNavbar() {
 // function changeIcon(x) {
 //     x.classList.toggle("change");
 // }
+$(".hover").mouseleave(
+  function() {
+    $(this).removeClass("hover");
+  }
+);
 
 
 function openTab(evt, tabName) {
@@ -261,10 +266,10 @@ function inName() {
 
 
 //display 
-bio.display();
-education.display();
-work.display();
-projects.display();
+// bio.display();
+// education.display();
+// work.display();
+// projects.display();
 
 
 
