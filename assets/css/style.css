@@ -34,6 +34,12 @@ h2.section {
   float: right;
 }
 
+
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+
 .has-lines {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -67,6 +73,32 @@ h2.section {
 .has-lines:after {
     margin-left: 20px;
 }
+
+.skill {
+  border: 1px solid #50a9d1;
+  margin-right: 10px;
+  /*text-transform: uppercase;*/
+  font-weight: 500;
+  width: auto;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1.33333em;
+  padding: 7px 18px;
+  margin-top: 0.8em;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+}
+
+.tech{
+    font-family: 'Karla', sans-serif;
+    font-size: 14px;
+    color: #444444;
+    font-weight: 700;
+}
+
 
 
 /*=======================Fixed navbar=================*/
@@ -434,6 +466,7 @@ h2.section {
     padding: 0px;
     clear: both;
     background-color: white;
+    font-family: 'Karla', sans-serif;
 }
 
 div.tab {
@@ -466,7 +499,7 @@ img.logo {
 
 img.logo:hover {
     -webkit-filter: drop-shadow(0px 8px 10px black) brightness(2); /* Safari */
-    filter: drop-shadow(0px 8px 10px black) brightness(2);
+    filter: drop-shadow(0px 8px 10px black) brightness(1.2);
 
 }
 
@@ -511,6 +544,9 @@ div.tab button.active {
     -webkit-animation: fadeEffect 1s;
     animation: fadeEffect 1s;
     width: 40%;
+    /*background-color: #A893A9;*/
+    line-height: 140%;
+
 
 }
 
@@ -521,7 +557,7 @@ div.tab button.active {
 }
 
 
-/* Fade in tabs */
+ Fade in tabs 
 
 @-webkit-keyframes fadeEffect {
     from {
@@ -539,4 +575,40 @@ div.tab button.active {
     to {
         opacity: 1;
     }
+}
+
+.schoolName, .workTitle{
+  /*font-family: Georgia;*/
+  font-size: 18px;
+
+  color: #2E4053;
+}
+
+.degree {
+  font-size: 16px;
+  color: #2C272C;
+}
+
+.info {
+  font-size: 16px;
+  line-height: 200%
+  color: #383438;
+}
+
+.company {
+  font-size: 14px;
+}
+.black {
+  color: #1B2631;  
+  /*font-weight: 600;*/
+  font-family: 
+}
+
+.subContent a, .subContent a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.more {
+    color: #760505;
 }
