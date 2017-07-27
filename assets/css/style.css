@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+hr {
+    margin: 0;
+    padding: 0;
+}
 
 body,
 html {
@@ -568,10 +572,10 @@ div.tab button.active {
     margin-top: 30px;
 }
 
-.composition {
-    margin-bottom: 10px;
-    margin-left: 40px;
-    margin-top: 50px;
+.list {
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-top: 30px;
 }
 
 
@@ -605,17 +609,6 @@ Fade in tabs @-webkit-keyframes fadeEffect {
     color: #2C272C;
 }
 
-.compTitle {
-    font-size: 18px;
-    color: #2E4053;
-}
-
-.instrumentation {
-    font-size: 16px;
-    color: #2C272C;
-    /*font-weight: 400;*/
-    font-style: italic;
-}
 
 .info {
     font-size: 16px;
@@ -644,17 +637,15 @@ Fade in tabs @-webkit-keyframes fadeEffect {
 
 button.accordion {
     background-color: white;
-    color: #466983;
     cursor: pointer;
     padding: 18px;
+    /*padding-left: 0px;*/
     width: 100%;
     border: none;
     text-align: left;
     outline: none;
-    font-family: Times;
-    font-size: 22px;
-    font-style: italic;
-    font-weight: 600;
+    font-size: 18px;
+    color: #2E4053;
     transition: 0.4s;
 }
 
@@ -666,10 +657,11 @@ button.accordion:hover {
 button.accordion:after {
     content: '\002B';
     color: #466983;
-    font-size: 28px;
-    font-weight: bold;
+    font-size: 30px;
+   /* font-weight: bold;*/
     float: right;
     margin-left: 5px;
+
 }
 
 button.accordion.active:after {
@@ -682,4 +674,27 @@ div.panel {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+}
+
+.composition {
+    margin-bottom: 35px;
+    /*margin-left: 40px;*/
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.compTitle {
+    font-family: Times;
+    color: #466983;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 17px;
+    color: #2E4053;
+}
+
+.instrumentation {
+    font-size: 14px;
+    color: #2C272C;
+    /*font-weight: 400;*/
+    font-style: italic;
 }
