@@ -31,7 +31,7 @@ h2.section {
 }
 
 .right {
-  float: right;
+    float: right;
 }
 
 
@@ -75,29 +75,30 @@ sup {
 }
 
 .skill {
-  border: 1px solid #50a9d1;
-  margin-right: 10px;
-  /*text-transform: uppercase;*/
-  font-weight: 500;
-  width: auto;
-  display: inline-block;
-  font-size: 12px;
-  line-height: 1.33333em;
-  padding: 7px 18px;
-  margin-top: 0.8em;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-  border-radius: 8px;
+    border: 1px solid #50a9d1;
+    margin-right: 10px;
+    /*text-transform: uppercase;*/
+    font-weight: 500;
+    width: auto;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1.33333em;
+    padding: 7px 18px;
+    margin-top: 0.8em;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
 }
 
-.tech{
-    font-family: 'Karla', sans-serif;
+.tech {
+    /*font-family: 'Karla', sans-serif;*/
     font-size: 14px;
     color: #444444;
     font-weight: 700;
 }
+
 
 
 
@@ -133,6 +134,7 @@ sup {
 
 
 
+
 /* Style the links inside the navigation bar */
 
 .navbar a {
@@ -155,6 +157,7 @@ sup {
 
 
 
+
 /* Change the color of links on hover */
 
 .navbar a:hover {
@@ -168,12 +171,14 @@ sup {
 
 
 
+
 /* Add a color to the active/current link */
 
 .navbar a.active {
     background-color: #4CAF50;
     color: white;
 }
+
 
 
 
@@ -223,6 +228,7 @@ sup {
 
 
 
+
 /*=================big hero image=========================*/
 
 .hero-image {
@@ -245,6 +251,7 @@ sup {
     transform: translate(-50%, -50%);
     color: #FEF5E7;
 }
+
 
 
 /*.hero-text button {
@@ -284,6 +291,7 @@ sup {
 }
 
 
+
 /*=======================About Me====================*/
 
 #about {
@@ -298,6 +306,7 @@ sup {
     font-style: italic;
     background-color: #FDFEFE;
 }
+
 
 
 /*#aboutBody {
@@ -455,6 +464,7 @@ sup {
 
 
 
+
 /*=========================Resume section======================*/
 
 
@@ -498,10 +508,11 @@ img.logo {
 }
 
 img.logo:hover {
-    -webkit-filter: drop-shadow(0px 8px 10px black) brightness(2); /* Safari */
+    -webkit-filter: drop-shadow(0px 8px 10px black) brightness(2);
+    /* Safari */
     filter: drop-shadow(0px 8px 10px black) brightness(1.2);
-
 }
+
 
 /* Style the buttons inside the tab */
 
@@ -518,6 +529,7 @@ div.tab button {
 
 
 
+
 /* Change background color of buttons on hover */
 
 div.tab button:hover {
@@ -526,11 +538,13 @@ div.tab button:hover {
 
 
 
+
 /* Create an active/current tablink class */
 
 div.tab button.active {
     background-color: #ccc;
 }
+
 
 
 
@@ -546,20 +560,22 @@ div.tab button.active {
     width: 40%;
     /*background-color: #A893A9;*/
     line-height: 140%;
-
-
 }
 
 .subContent {
-  margin-bottom: 80px;
-  margin-left: 20px;
-  margin-top: 50px;
+    margin-bottom: 80px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.composition {
+    margin-bottom: 10px;
+    margin-left: 40px;
+    margin-top: 50px;
 }
 
 
- Fade in tabs 
-
-@-webkit-keyframes fadeEffect {
+Fade in tabs @-webkit-keyframes fadeEffect {
     from {
         opacity: 0;
     }
@@ -577,38 +593,93 @@ div.tab button.active {
     }
 }
 
-.schoolName, .workTitle{
-  /*font-family: Georgia;*/
-  font-size: 18px;
-
-  color: #2E4053;
+.schoolName,
+.workTitle {
+    /*font-family: Georgia;*/
+    font-size: 18px;
+    color: #2E4053;
 }
 
 .degree {
-  font-size: 16px;
-  color: #2C272C;
+    font-size: 16px;
+    color: #2C272C;
+}
+
+.compTitle {
+    font-size: 18px;
+    color: #2E4053;
+}
+
+.instrumentation {
+    font-size: 16px;
+    color: #2C272C;
+    /*font-weight: 400;*/
+    font-style: italic;
 }
 
 .info {
-  font-size: 16px;
-  line-height: 200%
-  color: #383438;
+    font-size: 16px;
+    line-height: 200% color: #383438;
 }
 
 .company {
-  font-size: 14px;
-}
-.black {
-  color: #1B2631;  
-  /*font-weight: 600;*/
-  font-family: 
+    font-size: 14px;
 }
 
-.subContent a, .subContent a:visited {
+.black {
+    color: #1B2631;
+    /*font-weight: 600;*/
+    font-family:
+}
+
+.subContent a,
+.subContent a:visited {
     text-decoration: none;
     color: inherit;
 }
 
 .more {
     color: #760505;
+}
+
+button.accordion {
+    background-color: white;
+    color: #466983;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-family: Times;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 600;
+    transition: 0.4s;
+}
+
+button.accordion.active,
+button.accordion:hover {
+    background-color: #ddd;
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: #466983;
+    font-size: 28px;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
