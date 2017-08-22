@@ -2,50 +2,58 @@ var acc = document.getElementsByClassName("accordion");
 var i;
 
 for (i = 0; i < acc.length; i++) {
-  acc[i].onclick = function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  }
+    acc[i].onclick = function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+    }
 }
 
 function hideNavbar() {
-	var x = document.getElementById("myTopnav");
-	if (x.className === "navbar") {
-		x.className += " responsive";
-	} else {
-		x.className = "navbar";
-	}
+    var x = document.getElementById("myTopnav");
+    if (x.className === "navbar") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar";
+    }
 }
 
 // function changeIcon(x) {
 //     x.classList.toggle("change");
 // }
 $(".hover").mouseleave(
-  function() {
-    $(this).removeClass("hover");
-  }
+    function() {
+        $(this).removeClass("hover");
+    }
 );
 
 
 function openTab(evt, tabName) {
-	var i, tabcontent, tablinks;
-	tabcontent = document.getElementsByClassName("tabcontent");
-	for (i = 0; i < tabcontent.length; i++) {
-		tabcontent[i].style.display = "none";
-	}
-	tablinks = document.getElementsByClassName("tablinks");
-	for (i = 0; i < tablinks.length; i++) {
-		tablinks[i].className = tablinks[i].className.replace(" active", "");
-	}
-	document.getElementById(tabName).style.display = "block";
-	evt.currentTarget.className += " active";
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
 }
 
+
+function on(id) {
+    document.getElementById(id).style.display = "block";
+}
+
+function off(id) {
+    document.getElementById(id).style.display = "none";
+}
 
 
 /*
@@ -98,101 +106,100 @@ var googleMap = '<div id="map"></div>';
 
 
 var bio = {
-	"name": "Sina Karachaini",
-	"role": "Software Engineer and Composer",
-	"contacts": {
-		"mobile": "(333) 777 - 9999",
-		"email": "myEmail@gmail.com",
-		"address": "Los Angeles, CA"
-	},
+    "name": "Sina Karachaini",
+    "role": "Software Engineer and Composer",
+    "contacts": {
+        "mobile": "(333) 777 - 9999",
+        "email": "myEmail@gmail.com",
+        "address": "Los Angeles, CA"
+    },
 
-	"welcomeMessage": "Hi! Welcome to my portfolio website :)",
-	"bioPic": "images/fry.jpg",
-	"skills": ["C/C++", "JS", "HTML", "CSS"]
+    "welcomeMessage": "Hi! Welcome to my portfolio website :)",
+    "bioPic": "images/fry.jpg",
+    "skills": ["C/C++", "JS", "HTML", "CSS"]
 };
 
 var education = {
-	"schools": [{
-			//link to image of school logo
-			"name": "assets\\images\\usc2.png",
-			"alt" : "University of Southern California",
-			"location": "Los Angeles, CA",
-			"degree": "B.S. Computer Science <br /> B.M. Music Composition",
-			"dates": "2016 - 2019",
-			"info": "Dean's List",
-			"GPA" : "3.9"
-		}, {
-			//link to image of school logo
-			"name": "assets\\images\\ivc.png",
-			"alt": "Irvine Valley College",
-			"location": "Irvine, CA",
-			"degree": "A.S. Math, A.S. Physics, A.A. Music",
-			"dates": "2013 - 2016",
-			"info": "summa cum laude, Honors Program, Dean's list",
-			"GPA" : "4.0"
-		}, {
-			//link to image of school logo
-			"name": "assets\\images\\nodet.png",
-			"alt": "Shahid Ejei High School of Excptional Talents",
-			"location": "Esfahan, Iran",
-			"degree": "Diploma in Physics &amp; Mathematics",
-			"dates": "2010 - 2013",
-			"info": "",
-			"GPA" : "3.83"
-		}
-	]
+    "schools": [{
+        //link to image of school logo
+        "name": "assets\\images\\usc2.png",
+        "alt": "University of Southern California",
+        "location": "Los Angeles, CA",
+        "degree": "B.S. Computer Science <br /> B.M. Music Composition",
+        "dates": "2016 - 2019",
+        "info": "Dean's List",
+        "GPA": "3.9"
+    }, {
+        //link to image of school logo
+        "name": "assets\\images\\ivc.png",
+        "alt": "Irvine Valley College",
+        "location": "Irvine, CA",
+        "degree": "A.S. Math, A.S. Physics, A.A. Music",
+        "dates": "2013 - 2016",
+        "info": "summa cum laude, Honors Program, Dean's list",
+        "GPA": "4.0"
+    }, {
+        //link to image of school logo
+        "name": "assets\\images\\nodet.png",
+        "alt": "Shahid Ejei High School of Excptional Talents",
+        "location": "Esfahan, Iran",
+        "degree": "Diploma in Physics &amp; Mathematics",
+        "dates": "2010 - 2013",
+        "info": "",
+        "GPA": "3.83"
+    }]
 };
 
 
 education.display = function() {
-	for (school in education.schools){
-		var formattedEducationSection = HTMLeducationSection.replace("%data1%", education.schools[school].name);
-		formattedEducationSection = formattedEducationSection.replace("%data2%", education.schools[school].alt);
-		formattedEducationSection = formattedEducationSection.replace("%data3%", education.schools[school].location);
-		formattedEducationSection = formattedEducationSection.replace("%data4%", education.schools[school].degree);
-		formattedEducationSection = formattedEducationSection.replace("%data5%", education.schools[school].dates);
-		formattedEducationSection = formattedEducationSection.replace("%data6%", education.schools[school].info);
-		formattedEducationSection = formattedEducationSection.replace("%data7%", education.schools[school].GPA);
-		$("#education").append(formattedEducationSection);
-	}
+    for (school in education.schools) {
+        var formattedEducationSection = HTMLeducationSection.replace("%data1%", education.schools[school].name);
+        formattedEducationSection = formattedEducationSection.replace("%data2%", education.schools[school].alt);
+        formattedEducationSection = formattedEducationSection.replace("%data3%", education.schools[school].location);
+        formattedEducationSection = formattedEducationSection.replace("%data4%", education.schools[school].degree);
+        formattedEducationSection = formattedEducationSection.replace("%data5%", education.schools[school].dates);
+        formattedEducationSection = formattedEducationSection.replace("%data6%", education.schools[school].info);
+        formattedEducationSection = formattedEducationSection.replace("%data7%", education.schools[school].GPA);
+        $("#education").append(formattedEducationSection);
+    }
 
 };
 
 
 var work = {
-	"jobs": [{
-			"employer": "USC ITS",
-			"title": "Windows Software Engineer",
-			"location": "Los Angeles, CA",
-			"dates": "2017 - present",
-			"description": "I worked on repackaging and modifying software for installationa and updating the software on lab and library computers on campus. I used InstallShield, JavaScript and other repackaging tools."
-		},
+    "jobs": [{
+            "employer": "USC ITS",
+            "title": "Windows Software Engineer",
+            "location": "Los Angeles, CA",
+            "dates": "2017 - present",
+            "description": "I worked on repackaging and modifying software for installationa and updating the software on lab and library computers on campus. I used InstallShield, JavaScript and other repackaging tools."
+        },
 
-		{
-			"employer": "IVC Writing Center",
-			"title": "Student Aide",
-			"location": "Irvine, CA",
-			"dates": "2015 - 2016",
-			"description": "I answered students' queries, entered data, maitained the center, and made flyers and announcements."
-		}
-	]
+        {
+            "employer": "IVC Writing Center",
+            "title": "Student Aide",
+            "location": "Irvine, CA",
+            "dates": "2015 - 2016",
+            "description": "I answered students' queries, entered data, maitained the center, and made flyers and announcements."
+        }
+    ]
 }
 
 
 var projects = {
-	"projects": [{
-		"title": "U.S. Department of Energy Solar Decathlon",
-		"dates": "Spring 2017",
-		"description": "Created a platform for communication between pilots and traffic controllers in direct cooperation with LAX to improve runway safety.",
-		//an array with URL strings for project imgaes
-		"images": ["images/LOGO.png"]
-	}, {
-		"title": "FAA Airport Cooperative Research Competition",
-		"dates": "Sept. 2014 – Sept. 2015",
-		"description": "Designed the lighting system and architecture of a net zero sustainable house.",
-		//an array with URL strings for project imgaes
-		"images": ["images/House.jpg"]
-	}]
+    "projects": [{
+        "title": "U.S. Department of Energy Solar Decathlon",
+        "dates": "Spring 2017",
+        "description": "Created a platform for communication between pilots and traffic controllers in direct cooperation with LAX to improve runway safety.",
+        //an array with URL strings for project imgaes
+        "images": ["images/LOGO.png"]
+    }, {
+        "title": "FAA Airport Cooperative Research Competition",
+        "dates": "Sept. 2014 – Sept. 2015",
+        "description": "Designed the lighting system and architecture of a net zero sustainable house.",
+        //an array with URL strings for project imgaes
+        "images": ["images/House.jpg"]
+    }]
 }
 
 
@@ -204,24 +211,24 @@ or just inside the object itself:
 */
 
 bio.display = function() {
-	var formattedName = HTMLheaderName.replace("%data%", "Sina Karachaini");
-	var formattedRole = HTMLheaderRole.replace("%data%", "Software Engineer");
-	var formattedImage = HTMLbioPic.replace("%data%", bio.bioPic);
-	var formattedMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
+    var formattedName = HTMLheaderName.replace("%data%", "Sina Karachaini");
+    var formattedRole = HTMLheaderRole.replace("%data%", "Software Engineer");
+    var formattedImage = HTMLbioPic.replace("%data%", bio.bioPic);
+    var formattedMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
 
-	var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
-	var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
-	var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.address);
-	$("#topContacts").append(formattedMobile, formattedEmail, formattedLocation);
+    var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
+    var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
+    var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.address);
+    $("#topContacts").append(formattedMobile, formattedEmail, formattedLocation);
 
 
-	$("#header").prepend(formattedRole).prepend(formattedName).append(formattedImage, formattedMessage);
-	$("#header").append(HTMLskillsStart);
+    $("#header").prepend(formattedRole).prepend(formattedName).append(formattedImage, formattedMessage);
+    $("#header").append(HTMLskillsStart);
 
-	bio.skills.forEach(function(index) {
-		var formattedSkill = HTMLskills.replace("%data%", index);
-		$("#skills").append(formattedSkill);
-	});
+    bio.skills.forEach(function(index) {
+        var formattedSkill = HTMLskills.replace("%data%", index);
+        $("#skills").append(formattedSkill);
+    });
 
 };
 
@@ -230,46 +237,46 @@ bio.display = function() {
 
 
 work.display = function() {
-	for (job in work.jobs) {
-		//create new div for work experience
-		$("#work").append(HTMLworkStart);
-		//Append employer and title
-		var formattedWorkEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
-		var formattedWorkTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
-		var formattedEmployerTitle = formattedWorkEmployer + formattedWorkTitle;
-		$(".work-entry:last").append(formattedEmployerTitle);
+    for (job in work.jobs) {
+        //create new div for work experience
+        $("#work").append(HTMLworkStart);
+        //Append employer and title
+        var formattedWorkEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
+        var formattedWorkTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
+        var formattedEmployerTitle = formattedWorkEmployer + formattedWorkTitle;
+        $(".work-entry:last").append(formattedEmployerTitle);
 
-		var formattedDates = HTMLworkDates.replace("%data%", work.jobs[job].dates);
-		$(".work-entry:last").append(formattedDates);
+        var formattedDates = HTMLworkDates.replace("%data%", work.jobs[job].dates);
+        $(".work-entry:last").append(formattedDates);
 
-		var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
-		$(".work-entry:last").append(formattedDescription);
-	}
+        var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
+        $(".work-entry:last").append(formattedDescription);
+    }
 };
 
 projects.display = function() {
-	projects.projects.forEach(function(index) {
-		//create the project dev
-		$("#projects").append(HTMLprojectStart);
-		//Getting the data
-		var formattedProjectTitle = HTMLprojectTitle.replace("%data%", index.title);
-		var formattedProjectDates = HTMLprojectDates.replace("%data%", index.dates);
-		var formattedProjectDescription = HTMLprojectDescription.replace("%data%", index.description);
-		var formattedProjectImage = HTMLprojectImage.replace("%data%", index.images[0]);
-		//append the data
-		$(".project-entry:last").append(formattedProjectTitle, formattedProjectDates, formattedProjectDescription, formattedProjectImage)
-	});
+    projects.projects.forEach(function(index) {
+        //create the project dev
+        $("#projects").append(HTMLprojectStart);
+        //Getting the data
+        var formattedProjectTitle = HTMLprojectTitle.replace("%data%", index.title);
+        var formattedProjectDates = HTMLprojectDates.replace("%data%", index.dates);
+        var formattedProjectDescription = HTMLprojectDescription.replace("%data%", index.description);
+        var formattedProjectImage = HTMLprojectImage.replace("%data%", index.images[0]);
+        //append the data
+        $(".project-entry:last").append(formattedProjectTitle, formattedProjectDates, formattedProjectDescription, formattedProjectImage)
+    });
 };
 
 
 
 function inName() {
-	var names = bio.name.trim().split(" ");
-	console.log(name);
-	names[1] = names[1].toUpperCase();
-	names[0] = names[0].slice(0, 1).toUpperCase() + names[0].slice(1).toLowerCase();
-	finalName = names.join(" ");
-	return finalName;
+    var names = bio.name.trim().split(" ");
+    console.log(name);
+    names[1] = names[1].toUpperCase();
+    names[0] = names[0].slice(0, 1).toUpperCase() + names[0].slice(1).toLowerCase();
+    finalName = names.join(" ");
+    return finalName;
 };
 
 // $(document).click(function(loc) {
