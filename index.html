@@ -88,7 +88,7 @@ function constructionAlert() {
                     <br /> I'm currently studying both fields at University of Southern California.
                     <img src="assets/images/victory.png" alt="<Fight On>" height="36" width="36"> </p>
                 <p>I am passionate about music, technology, aircraft and aviation, architecture and urban planning, and mass transit. </p>
-                <p>In my free time, I like to draw, play harmonica and recorder, explore the world in Google Earth, hang out with my friends, and watch TV.</p>
+                <p>In my free time, I like to draw, play harmonica and recorder, explore the world in Google Earth, and hang out with my friends.</p>
                 <p>Feel free to shoot me a message or follow me on social media to stay tuned about any upcoming events and performances.</p>
             </div>
         </section>
@@ -96,36 +96,36 @@ function constructionAlert() {
         <section id="projects">
             <h2 class="has-lines section">Projects</h2>
             <div class="row">
-                <figure id="d1" class="projImgEffect col size">
+                <figure id="d1" class="projImgEffect col size" onclick="on('whereOnEarth')">
                     <img src="assets/images/projects/big-earth.png" alt="sample5" height="280" width="280">
                     <figcaption>
                         <h3>Where on Earth? <span>Click for More Details</span></h3>
                     </figcaption>
-                    <a href="#"></a>
+                    <!-- <a href="#whereOnEarth"></a> -->
                     </figcaption>
                 </figure>
-                <figure id="d1" class="projImgEffect col size">
+                <figure id="d1" class="projImgEffect col size" onclick="on('FAA')">
                     <img src="assets/images/projects/faa.png" alt="sample5" height="280" width="280">
                     <figcaption>
                         <h3>FAA Competition <span>Click for More Details</span></h3>
                     </figcaption>
-                    <a href="#"></a>
+                    <!-- <a href="#"></a> -->
                     </figcaption>
                 </figure>
-                <figure id="d1" class="projImgEffect col size">
+                <figure id="d1" class="projImgEffect col size" onclick="on('retail')">
                     <img src="assets/images/projects/software.png" alt="sample5" height="280" width="280" style="border-radius: 50%;">
                     <figcaption>
                         <h3>Retail Software<span>Click for More Details</span></h3>
                     </figcaption>
-                    <a href="#"></a>
+                    <!-- <a href="#"></a> -->
                     </figcaption>
                 </figure>
-                <figure id="d1" class="projImgEffect col size">
+                <figure id="d1" class="projImgEffect col size" onclick="on('portfolio')">
                     <img src="assets/images/projects/website-square.png" alt="sample5" height="280" width="280" style="border-radius: 50%;">
                     <figcaption>
                         <h3>Portfolio Website <span>Click for More Details</span></h3>
                     </figcaption>
-                    <a href="#"></a>
+                    <!-- <a href="#"></a> -->
                     </figcaption>
                 </figure>
             </div>
@@ -364,7 +364,8 @@ function constructionAlert() {
                                     <span class="right"><i class="fa fa-calendar" aria-hidden="true"></i> <i>Nov. 2013</i></span>
                                     <br/>
                                     <!-- <span class="instrumentation">for SATB Choir</span> -->
-                                    <span class="right"><i class="fa fa-clock-o" aria-hidden="true"></i> <i>7' 10"</i></span><br/>
+                                    <span class="right"><i class="fa fa-clock-o" aria-hidden="true"></i> <i>7' 10"</i></span>
+                                    <br/>
                                 </li>
                                 <hr>
                                 <li class="composition">
@@ -418,7 +419,7 @@ function constructionAlert() {
                     <p>
                         <span class="tech">Technologies: </span>
                         <br/>
-                        <span class="skill">HTML</span><span class="skill">CSS</span><span class="skill">JavaScript</span><span class="skill">Google Map APIs</span><span class="skill">Twitter Bootstrap</span>
+                        <span class="skill">HTML</span><span class="skill">CSS</span><span class="skill">JavaScript</span><span class="skill">Google Maps APIs</span><span class="skill">Twitter Bootstrap</span>
                     </p>
                 </div>
                 <div class="subContent">
@@ -431,7 +432,7 @@ function constructionAlert() {
                         <a target="_blank" href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
                         <br/>
                         <br/>
-                        <i><span class="info">This is my first website I made in order to teach myself basics of web development. You can find out where the location of geographical coordinates is using this website.<span class="more"><a href="#"> Read more here.&gt;&gt;</a>
+                        <i><span class="info">This is the first website I made in order to teach myself basics of web development. You can find out where the location of geographical coordinates is using this website.<span class="more"><a href="#"> Read more here.&gt;&gt;</a>
                         </span>
                         </span>
                         </i>
@@ -439,7 +440,7 @@ function constructionAlert() {
                     <p>
                         <span class="tech">Technologies: &nbsp; &nbsp;</span>
                         <!-- <br/> -->
-                        <span class="skill">HTML</span><span class="skill">CSS</span><span class="skill">JavaScript</span><span class="skill">Google Map APIs</span>
+                        <span class="skill">HTML</span><span class="skill">CSS</span><span class="skill">JavaScript</span><span class="skill">Google Maps APIs</span>
                     </p>
                 </div>
                 <div class="subContent">
@@ -487,13 +488,13 @@ function constructionAlert() {
                         <span class="right"><i class="fa fa-calendar" aria-hidden="true"></i> <i>Summer 2009</i></span>
                         <br/>
                         <br/>
-                        <i><span class="info">I built this app with Flash for my middle school Arabic course extra-credit project.<span class="more"><a href="#"> Read more here.&gt;&gt;</a>
+                        <i><span class="info">I built this app with Flash as an extra-credit project for my middle school Arabic course.<span class="more"><a href="#"> Read more here.&gt;&gt;</a>
                         </span>
                         </span>
                         </i>
                     </p>
                     <p>
-                        <span class="tech">Technologies: &nbsp; &nbsp;</span>                    
+                        <span class="tech">Technologies: &nbsp; &nbsp;</span>
                         <span class="skill">Flash</span>
                     </p>
                 </div>
@@ -501,13 +502,117 @@ function constructionAlert() {
         </div>
         <!-- ....................... skills ........................... -->
         <div id="skills" class="tabcontent">
-            <p>I have skills</p>
+            <div class="subContent">
+                <p>
+                    <span class="tech">Programming Languages:</span>
+                    <br/>
+                    <span class="skill">C</span><span class="skill">C++</span><span class="skill">Java</span><span class="skill">JavaScript</span><span class="skill">HTML</span><span class="skill">CSS</span><span class="skill">MATLAB</span>
+                    <br/>
+                    <br/>
+                </p>
+                <p>
+                    <span class="tech">Technologies:</span>
+                    <br/>
+                    <span class="skill">Git/GitHub</span><span class="skill">Google Maps API</span><span class="skill">Bootstrap</span><span class="skill">InstallShield</span><span class="skill">Maple</span><span class="skill">Adobe Flash</span><span class="skill">VirtualBox</span><span class="skill">VMware</span>
+                    <span class="skill">Finale</span><span class="skill">Dorico</span><span class="skill">MS Office</span>
+                    <br/>
+                    <br/>
+                </p>
+                <p>
+                    <span class="tech">Platforms:</span>
+                    <br/>
+                    <span class="skill">Windows</span><span class="skill">macOs</span><span class="skill">Linux</span><span class="skill">Web</span>
+                    <br/>
+                    <br/>
+                </p>
+                <p>
+                    <span class="tech">Musical Skills:</span>
+                    <br/>
+                    <span class="skill">Composition</span><span class="skill">Orchestration</span><span class="skill">Arrangement</span><span class="skill">Film/Video Game Scoring</span> <span class="skill">Piano</span>
+                    <br/>
+                    <br/>
+                </p>
+                <p>
+                    <span class="tech">Areas of Interest:</span>
+                    <br/>
+                    <span class="skill">Aerospace</span><span class="skill">Mass Transit</span><span class="skill">Urban Planning</span><span class="skill">Software Development</span><span class="skill">Music</span><span class="skill">Architecture</span>
+                    <br/>
+                    <br/>
+                </p>
+            </div>
         </div>
+        <!-- ......................... Honors ......................... -->
         <div id="honors" class="tabcontent">
-            <p>I have honors</p>
-        </div>
+            <div class="subContent">
+                <p>
+                    <span class="degree"><b>Saddleback Kiwanis Foundation Scholarship</b></span>
+                    <span class="right"><i class="fa fa-calendar" aria-hidden="true"></i> <i>2016</i></span>
+                    <br/>
+                    <br/>
+                    <span class="degree"><b>ASIVC Academic Excellence Scholarship</b></span>
+                    <span class="right"><i class="fa fa-calendar" aria-hidden="true"></i> <i>2016</i></span>
+                    <br/>
+                    <br/>
+                    <span class="degree"><b>ASIVC Computer Science and Engineering Scholarship</b></span>
+                    <span class="right"><i class="fa fa-calendar" aria-hidden="true"></i> <i>2016</i></span>
+                    <br/>
+                    <br/>
+                    <span class="degree"><b>ASIVC Fine Arts Scholarship</b></span>
+                    <i><span class="right"><i class="fa fa-calendar" aria-hidden="true"></i> 2016</span>
+                    <br/><span class="right">2015</span></i>
+                    <br/>
+                    <br/>
+                    <span class="degree"><b>Tonya Reed Gardner Endowed Music Scholarship</b></span>
+                    <span class="right"><i class="fa fa-calendar" aria-hidden="true"></i> <i>2016</i></span>
+                    <br/>
+                    <br/>
+                    <span class="degree"><b>Ikemi-Murakami Music Scholarship</b></span>
+                    <i><span class="right"><i class="fa fa-calendar" aria-hidden="true"></i> 2015</span>
+                    <br/><span class="right">2014</span></i>
+                    <br/>
+                    <br/>
+                    <span class="degree"><b>Follett College Stores Corporation Scholarship</b></span>
+                    <span class="right"><i class="fa fa-calendar" aria-hidden="true"></i> <i>2015</i></span>
+                    <br/>
+                    <br/>
+                    <span class="degree"><b>Rosemount-Emerson Process Scholarship</b></span>
+                    <span class="right"><i class="fa fa-calendar" aria-hidden="true"></i> <i>2014</i></span>
+                    <br/>
+                    <br/>
+                    <span class="degree"><b>1st place in MACCC State Music Composition Competition</b></span>
+                    <span class="right"><i class="fa fa-calendar" aria-hidden="true"></i> <i>2014</i></span>
+                    <br/>
+                    <br/>
+                </p>
+            </div>
         </div>
     </section>
+    <section id="contact" class="main">
+        <h2 class="has-lines section">Contact me</h2>
+        <p><b>Sorry! This section will be up soon...</b></p>
+    </section>
+
+    <!-- ==================== Articles =========================== -->
+
+    <article id="whereOnEarth" onclick="off('whereOnEarth')">
+        <p id="overlayContent">Where on Earth sdfsdfsdfsdfsdf</p>
+    </article>
+
+    <article id="FAA" onclick="off('FAA')">
+        <p id="overlayContent">FAA</p>
+    </article>
+
+    <article id="retail" onclick="off('retail')">
+        <p id="overlayContent">retail</p>
+    </article>
+
+    <article id="portfolio" onclick="off('portfolio')">
+        <p id="overlayContent">portfolio</p>
+    </article>
+
+ <!--    <article id="overlay">
+        <p>FAA</p>
+    </article> -->
     <!-- Different Resume Style -->
     <!--     <div class="container theme-cactus">
         <h2>Left side tabs</h2>
