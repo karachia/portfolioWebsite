@@ -8,7 +8,7 @@
     <!-- <link rel="stylesheet" href="assets/css/resume.css" /> -->
     <link rel="shortcut icon" href="assets/images/code.ico" />
     <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bellefair|Cabin+Sketch|Josefin+Slab|Stardos+Stencil|Cinzel+Decorative" rel="stylesheet">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
 </head>
 <!-- ========================================= Body ============================================ -->
@@ -26,7 +26,7 @@ function constructionAlert() {
             <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="hideNavbar">&#9776;</a>
             <!-- Left  -->
             <div class="leftNav">
-                <span id="name" style="font-family: 'Bellefair'; font-size: 18px; margin-right: 20px;">Sina Karachiani</span>
+                <span id="name" style="font-family: 'cabin Sketch', 'Bellefair'"; font-size: 18px; margin-right: 25px;">Sina Karachiani</span>
                 <a href="https://github.com/karachia" target="_blank">
                     <i class="fa fa-github" aria-hidden="true"></i>
                 </a>
@@ -55,7 +55,7 @@ function constructionAlert() {
     <!-- <section id="home"> -->
     <div class="hero-image" id="home">
         <div class="hero-text">
-            <h1 style="font-size:56px; font-family: 'serif';">Sina Karachiani</h1>
+            <h1 style="font-size:56px; font-family: 'Cinzel Decorative', 'Stardos Stencil', 'serif';">Sina Karachiani</h1>
             <p style="font-size:22px;">Composer &amp; Software Developer</p>
             <p>~Los Angeles, CA~</p>
             <!-- links to other websites -->
@@ -96,7 +96,7 @@ function constructionAlert() {
         <section id="projects">
             <h2 class="has-lines section">Projects</h2>
             <div class="row">
-                <figure id="d1" class="projImgEffect col size" onclick="on('whereOnEarth')">
+                <figure class="projImgEffect col size" onclick="on('whereOnEarth')">
                     <img src="assets/images/projects/big-earth.png" alt="sample5" height="280" width="280">
                     <figcaption>
                         <h3>Where on Earth? <span>Click for More Details</span></h3>
@@ -104,7 +104,7 @@ function constructionAlert() {
                     <!-- <a href="#whereOnEarth"></a> -->
                     </figcaption>
                 </figure>
-                <figure id="d1" class="projImgEffect col size" onclick="on('FAA')">
+                <figure class="projImgEffect col size" onclick="on('FAA')">
                     <img src="assets/images/projects/faa.png" alt="sample5" height="280" width="280">
                     <figcaption>
                         <h3>FAA Competition <span>Click for More Details</span></h3>
@@ -112,7 +112,7 @@ function constructionAlert() {
                     <!-- <a href="#"></a> -->
                     </figcaption>
                 </figure>
-                <figure id="d1" class="projImgEffect col size" onclick="on('retail')">
+                <figure class="projImgEffect col size" onclick="on('retail')">
                     <img src="assets/images/projects/software.png" alt="sample5" height="280" width="280" style="border-radius: 50%;">
                     <figcaption>
                         <h3>Retail Software<span>Click for More Details</span></h3>
@@ -120,7 +120,7 @@ function constructionAlert() {
                     <!-- <a href="#"></a> -->
                     </figcaption>
                 </figure>
-                <figure id="d1" class="projImgEffect col size" onclick="on('portfolio')">
+                <figure class="projImgEffect col size" onclick="on('portfolio')">
                     <img src="assets/images/projects/website-square.png" alt="sample5" height="280" width="280" style="border-radius: 50%;">
                     <figcaption>
                         <h3>Portfolio Website <span>Click for More Details</span></h3>
@@ -135,7 +135,7 @@ function constructionAlert() {
     <section id="resume">
         <h2 class="has-lines section">Résumé</h2>
         <div class="tab">
-            <button class="tablinks" onclick="openTab(event, 'education')">Education</button>
+            <button id="defaultOpen", class="tablinks" style="font-family: 'Josefin Slab'" onclick="openTab(event, 'education')">Education</button>
             <button class="tablinks" onclick="openTab(event, 'work')">Work Experience</button>
             <!--  <button class="tablinks" onclick="openTab(event, 'volunteer')">Volunteer work</button> -->
             <button class="tablinks" onclick="openTab(event, 'resProject')">Projects</button>
@@ -380,7 +380,7 @@ function constructionAlert() {
                 </div>
                 <hr>
                 <div class="subContent">
-                    <a target="_blank" href="#"><img class="logo" src="assets/images/projects/faa.png"></a>
+                    <a target="_blank" href="http://vsgc.odu.edu/ACRPDesignCompetition/Competition_Winners.htm"><img class="logo" src="assets/images/projects/faa.png"></a>
                     <p>
                         <span class="workTitle"><b>T.A.X.I.</b></span>
                         <span class="right"><i class="fa fa-calendar" aria-hidden="true"></i> <i>Spring 2017</i></span>
@@ -402,13 +402,13 @@ function constructionAlert() {
                     </p>
                 </div>
                 <div class="subContent">
-                    <a target="_blank" href="#"><img class="logo" src="assets/images/projects/website-square.png"></a>
+                    <a target="_blank" href="https://karachia.github.io/portfolioWebsite/"><img class="logo" src="assets/images/projects/website-square.png"></a>
                     <p>
                         <span class="workTitle"><b>Portfolio Website</b></span>
                         <span class="right"><i class="fa fa-calendar" aria-hidden="true"></i> <i>Summer 2017</i></span>
                         <br/>
-                        <a target="_blank" href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a> &nbsp; &nbsp;
-                        <a target="_blank" href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        <a target="_blank" href="https://karachia.github.io/portfolioWebsite/"><i class="fa fa-external-link" aria-hidden="true"></i></a> &nbsp; &nbsp;
+                        <a target="_blank" href="https://github.com/karachia/portfolioWebsite"><i class="fa fa-github" aria-hidden="true"></i></a>
                         <br/>
                         <br/>
                         <i><span class="info">I built this website from the ground up (no templates) to better learn webdevelopment. Currently, the work is still in progress and some features may not be fucntional.<span class="more"><a href="#"> Read more here.&gt;&gt;</a>
@@ -423,13 +423,13 @@ function constructionAlert() {
                     </p>
                 </div>
                 <div class="subContent">
-                    <a target="_blank" href="#"><img class="logo" src="assets/images/projects/big-earth.png"></a>
+                    <a target="_blank" href="https://karachia.github.io/WhereOnEarth/"><img class="logo" src="assets/images/projects/big-earth.png"></a>
                     <p>
                         <span class="workTitle"><b>Where on Earth?</b></span>
                         <span class="right"><i class="fa fa-calendar" aria-hidden="true"></i> <i>Summer 2017</i></span>
                         <br/>
-                        <a target="_blank" href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a> &nbsp; &nbsp;
-                        <a target="_blank" href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        <a target="_blank" href="https://karachia.github.io/WhereOnEarth/"><i class="fa fa-external-link" aria-hidden="true"></i></a> &nbsp; &nbsp;
+                        <a target="_blank" href="https://github.com/karachia/WhereOnEarth"><i class="fa fa-github" aria-hidden="true"></i></a>
                         <br/>
                         <br/>
                         <i><span class="info">This is the first website I made in order to teach myself basics of web development. You can find out where the location of geographical coordinates is using this website.<span class="more"><a href="#"> Read more here.&gt;&gt;</a>
@@ -462,7 +462,7 @@ function constructionAlert() {
                     </p>
                 </div>
                 <div class="subContent">
-                    <a target="_blank" href="#"><img class="logo" src="assets/images/projects/teamoc.jpg"></a>
+                    <a target="_blank" href="http://teamoc2015.com/"><img class="logo" src="assets/images/projects/teamoc.jpg"></a>
                     <p>
                         <span class="workTitle"><b>U.S. Department of Energy Solar Decathlon</b></span>
                         <span class="right"><i class="fa fa-calendar" aria-hidden="true"></i> <i>Sept. 2014 – Sept. 2015</i></span>
@@ -594,19 +594,53 @@ function constructionAlert() {
 
     <!-- ==================== Articles =========================== -->
 
-    <article id="whereOnEarth" onclick="off('whereOnEarth')">
-        <p id="overlayContent">Where on Earth sdfsdfsdfsdfsdf</p>
+    <article id="whereOnEarth" class="overlay" onclick="off('whereOnEarth', 'contentArea1')">
+        <div id="contentArea1" class="overlayPanel"> 
+        <p id="overlayContent">Where on Earth
+        dfgkjdhfjgk <br/>
+        dfgkjdhfjgk <br/>
+        dfgkjdhfjgk <br/>
+        dfgkjdhfjgk <br/>
+        dfgkjdhfjgk <br/>
+        dfgkjdhfjgk <br/>
+
+        dfgkjdhfjgk <br/>
+        dfgkjdhfjgk <br/>
+        dfgkjdhfjgk <br/>
+        dfgkjdhfjgk <br/>
+        dfgkjdhfjgk <br/>
+        dfgkjdhfjgk <br/>
+        dfgkjdhfjgk <br/>
+        dfgkjdhfjgk <br/>
+        dfgkjdhfjgk <br/>
+        dfgkjdhfjgk <br/>
+        dfgkjdhfjgk <br/>
+        dfgkjdhfjgk <br/>
+        dfgkjdhfjgk <br/>
+        dfgkjdhfjgk <br/>
+        dfgkjdhfjgk <br/>
+        dfgkjdhfjgk <br/>
+
+
+
+
+
+
+
+        </p>
+        </div>
+       
     </article>
 
-    <article id="FAA" onclick="off('FAA')">
+    <article id="FAA" class="overlay" onclick="off('FAA')">
         <p id="overlayContent">FAA</p>
     </article>
 
-    <article id="retail" onclick="off('retail')">
+    <article id="retail" class="overlay" onclick="off('retail')">
         <p id="overlayContent">retail</p>
     </article>
 
-    <article id="portfolio" onclick="off('portfolio')">
+    <article id="portfolio" class="overlay" onclick="off('portfolio')">
         <p id="overlayContent">portfolio</p>
     </article>
 
@@ -667,7 +701,7 @@ function constructionAlert() {
     <script src="assets/js/main.js"></script>
     <!-- footre -->
     <footer id="footer" class="main">
-        <p class="copyright">&copy; Sina Karachiani 2017</p>
+        <p class="copyright">&copy; Sina Karachiani 2017 <br/> Los Angeles, CA</p>
     </footer>
 </body>
 

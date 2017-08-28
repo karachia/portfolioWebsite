@@ -19,7 +19,7 @@ html {
 }
 
 h2.section {
-    font-family: Bellefair;
+    font-family: 'Josefin Slab', Bellefair;
     font-size: 40px;
     color: #A6ACAF;
     font-style: normal;
@@ -112,7 +112,7 @@ sup {
 /* Add a black background color to the top navigation */
 
 .navbar {
-    font-family: serif;
+    font-family: 'cabin sketch', serif;
     background-color: #2A2828;
     overflow: hidden;
     position: fixed;
@@ -124,6 +124,7 @@ sup {
     padding: 14px 16px;
     font-size: 17px;
     z-index: 99 !important;
+    /*opacity: 0.7;*/
 }
 
 .rightNav {
@@ -165,7 +166,7 @@ sup {
 /* Change the color of links on hover */
 
 .navbar a:hover {
-    background-color: #ddd;
+    background-color: #FEF5E7;
     color: black;
 }
 
@@ -246,7 +247,7 @@ sup {
 }
 
 .hero-text {
-    font-family: 'Bellefair', serif, "Source Sans Pro";
+    font-family:'Josefin Slab', 'Bellefair', serif, "Source Sans Pro";
     font-size: 20px;
     text-align: center;
     position: absolute;
@@ -351,6 +352,7 @@ sup {
     position: relative;
     text-align: center;
     width: 100%;
+    cursor: pointer;
 }
 
 .projImgEffect * {
@@ -480,14 +482,20 @@ sup {
     padding: 0px;
     clear: both;
     background-color: white;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Josefin Slab';
 }
+ 
+ button.tablinks{
+    font-family: 'Josefin Slab';
+    font-size: 38px;
+    color: white;
+ }
 
 div.tab {
     text-align: center;
     overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
+    /*border: 1px solid #ccc;*/
+    background-color: #2A2828;
 }
 
 img.logo {
@@ -537,7 +545,8 @@ div.tab button {
 /* Change background color of buttons on hover */
 
 div.tab button:hover {
-    background-color: #ddd;
+    background-color: #5a5a58;
+
 }
 
 
@@ -546,7 +555,7 @@ div.tab button:hover {
 /* Create an active/current tablink class */
 
 div.tab button.active {
-    background-color: #ccc;
+    background-color: #4d4d4c;
 }
 
 
@@ -555,6 +564,7 @@ div.tab button.active {
 /* Style the tab content */
 
 .tabcontent {
+    font-family: 'Karla', sans-serif;
     display: block;
     margin: auto;
     display: none;
@@ -706,10 +716,9 @@ div.panel {
     background-color: #FDFEFE;
 }
 
-
-#whereOnEarth {
+.overlay{
+    /*text-align: center;*/
     position: fixed;
-    display: none;
     width: 100%;
     height: 100%;
     top: 0;
@@ -718,49 +727,21 @@ div.panel {
     bottom: 0;
     background-color: rgba(0,0,0,0.5);
     z-index: 2;
-    cursor: pointer;
+
+    /*cursor: pointer;*/
+    /*margin: auto;
+    vertical-align: top;*/
 }
 
-#FAA {
-    position: fixed;
-    display: none;
-    width: 100%;
+.overlayPanel {
+    background-color: rgba(56, 56, 56, 0.85);
+    width: 60%;
     height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.5);
-    z-index: 2;
-    cursor: pointer;
-}
-
-#retail {
-    position: fixed;
-    display: none;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.5);
-    z-index: 2;
-    cursor: pointer;
-}
-
-#portfolio {
-    position: fixed;
-    display: none;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.5);
-    z-index: 2;
-    cursor: pointer;
+    text-align: center;
+    margin: auto;
+    text-align: center;
+    vertical-align: top;
+    /*overflow: scroll;*/
 }
 
 #overlayContent{
@@ -771,4 +752,35 @@ div.panel {
     color: white;
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
+}
+
+
+#whereOnEarth {
+    display: none;
+}
+
+#FAA {
+   display: none;
+}
+
+#retail {
+   display: none;
+}
+
+#portfolio {
+    display: none;
+}
+
+#footer {
+    background-color: #2A2828;
+    overflow: hidden;
+    font-family: 'Josefin Slab', Bellefair;
+    /*top: 0;*/
+    width: 100%;
+    display: block;
+    color: #FEF5E7;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+   
 }

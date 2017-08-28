@@ -46,14 +46,21 @@ function openTab(evt, tabName) {
     evt.currentTarget.className += " active";
 }
 
+document.getElementById("defaultOpen").click();
+
 
 function on(id) {
-    document.getElementById(id).style.display = "block";
+    document.getElementById(id).style.display = "inline-block";
 }
 
-function off(id) {
-    document.getElementById(id).style.display = "none";
+function off(id, contentArea) {
+    document.getElementById(id).style.display = "none"; 
 }
+
+
+
+    
+
 
 
 /*
