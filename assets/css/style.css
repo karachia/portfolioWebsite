@@ -307,7 +307,7 @@ sup {
     text-align: center;
     color: #1B2631;
     font-size: 18px;
-    font-family: Palatino;
+    font-family:  'Raleway', serif;
     font-style: italic;
     background-color: #FDFEFE;
 }
@@ -712,7 +712,7 @@ div.panel {
 #contact {
     text-align: center;
     font-size: 28px;
-    font-family: Palatino;
+    font-family:  'Raleway', serif;
     background-color: #FDFEFE;
 }
 
