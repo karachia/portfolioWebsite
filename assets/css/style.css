@@ -43,6 +43,10 @@ sup {
     vertical-align: super;
     font-size: smaller;
 }
+.transition:active{
+    -webkit-transition: width 3s; /* For Safari 3.1 to 6.0 */
+    transition : width 3s;
+}
 
 .has-lines {
     display: -webkit-box;
@@ -305,10 +309,11 @@ sup {
     margin-bottom: 45px;
     padding: 1px;
     text-align: center;
-    color: #1B2631;
+    color: #474747;
     font-size: 18px;
-    font-family:  'Slabo 27px', serif;
+    font-family:  'Josefin Slab', serif;
     font-style: italic;
+    font-weight: 700;
     background-color: #FDFEFE;
 }
 
