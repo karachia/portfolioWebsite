@@ -752,7 +752,7 @@ div.panel {
 }
 
 .overlayContent{
-    position: absolute;
+    position: relative;
     top: 10%;
     left: 50%;
     font-size: 50px;
@@ -760,6 +760,13 @@ div.panel {
     padding-top: 20px;
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
+}
+
+.overlay-images {
+    display: block;
+    position: relative;
+    text-align: center;
+    margin: auto
 }
 
 /*
