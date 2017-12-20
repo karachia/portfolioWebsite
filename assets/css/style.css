@@ -721,6 +721,7 @@ div.panel {
     background-color: #FDFEFE;
 }
 
+/* Overlay panels for project details*/
 .overlay{
     /*text-align: center;*/
     position: fixed;
@@ -732,6 +733,7 @@ div.panel {
     bottom: 0;
     background-color: rgba(0,0,0,0.5);
     z-index: 2;
+    /*transition : 2s;*/
 
     /*cursor: pointer;*/
     /*margin: auto;
@@ -749,18 +751,20 @@ div.panel {
     /*overflow: scroll;*/
 }
 
-#overlayContent{
+.overlayContent{
     position: absolute;
-    top: 50%;
+    top: 10%;
     left: 50%;
     font-size: 50px;
     color: white;
+    padding-top: 20px;
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
 }
 
-
+/*
 #whereOnEarth {
+    transition : all 2s;
     display: none;
 }
 
@@ -774,7 +778,46 @@ div.panel {
 
 #portfolio {
     display: none;
+}*/
+
+.hidden {
+    opacity: 0.0;
+    visibility: hidden;
+    transition: 1s;
+
+   
 }
+
+.visible {   
+   opacity: 1;
+   visibility: visible;
+   transition: 1s;
+}
+
+.close-button{
+    background-color: transparent;
+    border: none;
+    color: gray;
+    border-radius: 50%;
+    font-size: 60px;
+    text-align: center;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.close-button:hover{
+    /*background-color: red;*/
+    color:#E5E7E9;
+    font-size: 72;
+    transition: 0.8s;
+    -webkit-filter: drop-shadow(0px 8px 10px black) brightness(1.2);
+    /* Safari */
+    filter: drop-shadow(0px 8px 10px black) brightness(1.2);
+}
+
+
+
+/*footer*/
 
 #footer {
     background-color: #2A2828;
@@ -789,3 +832,4 @@ div.panel {
     font-size: 17px;
    
 }
+

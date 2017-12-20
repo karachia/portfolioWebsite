@@ -663,35 +663,43 @@ function constructionAlert() {
     </section>
 
     <!-- ==================== Articles =========================== -->
-
-    <article id="whereOnEarth" class="overlay" onclick="off('whereOnEarth', 'contentArea1')">
-        <div id="contentArea1" class="overlayPanel"> 
-        <p id="overlayContent">Where on Earth
+    <!-- onclick="off('whereOnEarth', 'contentArea1')" -->
+    <article id="whereOnEarth" class="overlay hidden" >
+        <div class="overlayPanel"> 
+        <br><br><br>
+        <button class="close-button right" onclick="closeButton('whereOnEarth')">&times;</button>
+        <p class="overlayContent">Where on Earth
         <br/>Details will be added soon...
         </p>
         </div>
        
     </article>
 
-    <article id="FAA" class="overlay" onclick="off('FAA')">
+    <article id="FAA" class="overlay hidden">
         <div class="overlayPanel">
-            <p id="overlayContent">FAA
+        <br><br><br>
+        <button class="close-button right" onclick="closeButton('FAA')">&times;</button>
+            <p class="overlayContent">FAA
             <br/>Details will be added soon...
             </p>
         </div>
     </article>
 
-    <article id="retail" class="overlay" onclick="off('retail')">
+    <article id="retail" class="overlay hidden">
         <div class="overlayPanel">
-            <p id="overlayContent">Retail Software
+        <br><br><br>
+        <button class="close-button right" onclick="closeButton('retail')">&times;</button>
+            <p class="overlayContent">Retail Software
             <br/>Details will be added soon...
             </p>
         </div>
     </article>
 
-    <article id="portfolio" class="overlay" onclick="off('portfolio')">
+    <article id="portfolio" class="overlay hidden">
         <div class="overlayPanel">
-            <p id="overlayContent">Portfolio
+        <br><br><br>
+        <button class="close-button right" onclick="closeButton('portfolio')">&times;</button>
+            <p class="overlayContent">Portfolio
             <br/>Details will be added soon...
             </p>
         </div>  

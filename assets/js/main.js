@@ -49,14 +49,21 @@ function openTab(evt, tabName) {
 document.getElementById("defaultOpen").click();
 
 
-function on(id) {
-    document.getElementById(id).style.display = "inline-block";
+function on(id) {    
+    // document.getElementById(id).style.display = "inline-block";
+    document.getElementById(id).classList.remove('hidden');
+    document.getElementById(id).classList.add('visible');
 }
 
 function off(id, contentArea) {
     document.getElementById(id).style.display = "none"; 
 }
 
+function closeButton(id) {
+    document.getElementById(id).classList.remove('visible');
+    document.getElementById(id).classList.add('hidden');
+    // document.getElementById(id).style.display = "none";
+}
 
 
     
