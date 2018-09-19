@@ -46,7 +46,8 @@ function openTab(evt, tabName) {
     evt.currentTarget.className += " active";
 }
 
-document.getElementById("defaultOpen").click();
+//open the education tab in resume by default
+document.getElementById("education").style.display = "block";
 
 
 function on(id) {    
