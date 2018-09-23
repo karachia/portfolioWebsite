@@ -259,10 +259,16 @@ var resume = {
             skillsTerm : "Technologies:",
             skills : ["HTML", "CSS", "JavaScript", "Google Maps API", "Git"]
         }
-
+        
     ],
-
+    
     music: [
+        {
+            title: "I, You",
+            instruments: "for Guitar and Violin",
+            year: "Mar. 2018",
+            time : "5' 30\"", 
+        },
         {
             title: "Miniature Suite for Woodwinds",
             instruments: "Woodwind Quintet",
@@ -270,11 +276,69 @@ var resume = {
             time : "5'", 
         },
         {
+            title: "The Evil Witch Awakens!",
+            instruments: "for mixed ensemble",
+            year: "Oct. 2017",
+            time : "3'", 
+            info: "commissioned by Newgate Orchestra"
+        },
+        {
+            title: "Wanderer of Lonely City Streets ",
+            instruments: "for Brass Ensemble",
+            year: "Mar. 2017",
+            time : "8'", 
+        },
+        {
+            title: "Persistence of Memory",
+            instruments: "for Piano",
+            year: "Nov. 2016",
+            time : "12' 30\"", 
+        },
+        {
+            title: "And the Sun Rises Again",
+            instruments: "for Brass Ensemble",
+            year: "Mar. 2016",
+            time : "7'", 
+        },
+        {
+            title: "The Grove Runner",
+            instruments: "for Clarinet in A, 2 Bb trumpets, Trombone, and Piano",
+            year: "3' 45\"",
+            time : "Jan. 2016", 
+        },
+        {
+            title: "Breathing of Night",
+            instruments: "for Wind Symphony",
+            year: "Feb. 2015",
+            time : "4' 40\"", 
+            soundcloud: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/193594468&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+            info: "performed by IVC Wind Symphony"
+        },
+        {
+            title: "Brass Quintet",
+            instruments: "",
+            year: "Jan. 2015",
+            time : "5' 40\"", 
+        },
+        {
+            title: "Green Eggs and Ham ",
+            instruments: "for SATB Choir",
+            year: "Nov. 2014",
+            time : "2'", 
+            info: "Text by Dr. Seuss"
+        },
+        {
+            title: "A Dreamer's Reveries",
+            instruments: "for Wind Symphony",
+            year: "Oct. 2014",
+            time : "10' 30\"", 
+        },
+        {
             title: "Sonata for Contrabass and Piano ",
             instruments: "",
             year: "Apr. 2014",
             time : "20'",
-            info: "",
+            info: "First prize winner in MACCC State Conference Music Composition Competition, written for and performed by Tim Jensen.",
             soundcloud: "",
             scoreLink: "",
             videoLink: "",
@@ -292,6 +356,25 @@ var resume = {
                     movementTime: "5' 30\"",
                 }
             ]
+        },
+        {
+            title: "Trashcan Lives ",
+            instruments: "for SATB Choir",
+            year: "Nov. 2013",
+            time : "2' 40\"", 
+        },
+        {
+            title: "Orchestral Overture",
+            instruments: "",
+            year: "Nov. 2013",
+            time : "7' 10\"", 
+            soundcloud: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/148775152&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+        },
+        {
+            title: "Dance of the Brash Woman",
+            instruments: "for Orchestra",
+            year: "May 2013",
+            time : "2' 10\"", 
         }
     ],
 
@@ -305,11 +388,11 @@ var resume = {
                 },
                 {
                     name: "Intermediate",
-                    skills: ["C#", "C", "PHP"]
+                    skills: ["C#", "C", "PHP", "MySQL"]
                 },
                 {
                     name: "Begginer",
-                    skills: ["Python", "Swift", "MATLAB"]
+                    skills: ["Python", "Swift", "MATLAB", "TypeScript"]
                 }
             ]
         }
@@ -319,13 +402,13 @@ var resume = {
         {
             category: "Technologies",
             skills: [
-                "Bootstrap", "Google Maps API", "InstallShield"
+                "Bootstrap", "Google Maps API", "InstallShield", "Tomcat", "Chef", "Ionic Framework", "AJAX", "Windows Registry", "JDBC", "Maple"
             ]
         },
         {
             category: "Platforms",
             skills: [
-                "Windows", "MacOS", "Linux", "Web", "Mobile"
+                "Windows", "macOS", "Linux", "Web", "Mobile"
             ]
         },
         {
@@ -343,7 +426,7 @@ var resume = {
         {
             category: "Interests",
             skills: [
-                "Aviation", "Machine Learning", "Urban Planning"
+                "Aviation", "Machine Learning", "Urban Planning", "Architecture", "AR/VR", "UI/UX Design", "Music"
             ]
         }
     ],
@@ -351,18 +434,81 @@ var resume = {
     honors: [
         {
             tags : ["scholarship"],
-            name: "TGLA",
+            name: "Trojan Guild of Los Angeles Scholarship",
             year: "2018",
-            info: "Yup it was a process and I got free moeny adn thank you an shit and fcuk you fake hoes I am so done with theses people",            
+            info: "",            
         },
         {
-            name: "FAA design competition second prize national",
+            tags : ["competition"],
+            name: "2nd Place in FAA National Design Competition",
             year: "2018",           
         },
         {
-            name: "FAA design competition second prize national",
-            year: "2018",           
-        }
+            tags : ["scholarship"],
+            name: "Saddleback Kiwanis Foundation Scholarship",
+            year: "2016",
+            info: "",            
+        },
+        {
+            tags : ["scholarship"],
+            name: "ASIVC Academic Excellence Scholarship",
+            year: "2016",
+            info: "",            
+        },
+        {
+            tags : ["scholarship"],
+            name: "ASIVC Computer Science and Engineering Scholarship",
+            year: "2016",
+            info: "",            
+        },
+        {
+            tags : ["scholarship"],
+            name: "ASIVC Fine Arts Scholarship",
+            year: "2016",
+            info: "",            
+        },
+        {
+            tags : ["scholarship"],
+            name: "Tonya Reed Gardner Endowed Music Scholarship",
+            year: "2016",
+            info: "",            
+        },
+        {
+            tags : ["scholarship"],
+            name: " ASIVC Fine Arts Scholarship",
+            year: "2015",
+            info: "",            
+        },
+        {
+            tags : ["scholarship"],
+            name: "Ikemi-Murakami Music Scholarship ",
+            year: "2015",
+            info: "",            
+        },
+        {
+            tags : ["scholarship"],
+            name: "Follett College Stores Corporation Scholarship ",
+            year: "2015",
+            info: "",            
+        },
+        {
+            tags : ["scholarship"],
+            name: "Ikemi-Murakami Music Scholarship ",
+            year: "2014",
+            info: "",            
+        },
+        {
+            tags : ["scholarship"],
+            name: "Rosemount-Emerson Process Scholarship ",
+            year: "2014",
+            info: "",            
+        },
+        {
+            tags : ["scholarship"],
+            name: "1st place in MACCC State Composition Competition",
+            year: "2014",
+            info: "Sonata for Contrabass and Piano, performed by Tim Jensen and myself",            
+        },        
     ]
 };
 
