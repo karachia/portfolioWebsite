@@ -243,7 +243,7 @@ var resume = {
             logo : "assets/images/projects/big-earth.png",
             websitelink : "https://karachia.github.io/WhereOnEarth/",
             github : "https://github.com/karachia/WhereOnEarth", 
-            info : ["Developed my portfolio website from scratch to learn the basics of web development."],
+            info : ["My first attempt at web development. It uses Google Maps API to find the location of any coordinates on the map."],
             skillsTerm : "Technologies:",
             skills : ["HTML", "CSS", "JavaScript", "Google Maps API", "Git"]
         },
