@@ -40,7 +40,7 @@ var resume = {
             company : "Southern California Edison",
             year : "May 2018 - Present",
             location : "Rosemead, CA",
-            websitelink : "www.sce.com",
+            websitelink : "https://www.sce.com/",
             websitetext: "www.sce.com",
             logo : "assets/images/edison.png",
             info : [
@@ -107,7 +107,7 @@ var resume = {
         {
             tags : ["paid"],
             position : "Student Aide",
-            company : "Irvine Valley College Writign Center",
+            company : "Irvine Valley College Writing Center",
             year : "Aug. 2015 – Aug. 2016",
             location : "Irvine, CA",
             websitelink : "http://academics.ivc.edu/writingcenter/Pages/default.aspx",
@@ -186,7 +186,7 @@ var resume = {
             year : "Dec. 2017",
             info : ["Designed and implemented a responsive website for Jahan Moura International Freight Forwarding Company.", "Added support for two different languages of Farsi and English."],
             logo : "assets/images/projects/JM.png",
-            websitelink : "jahanmoura.com",
+            websitelink : "http://jahanmoura.com/",
             github : "https://github.com/karachia/JahanMoura",        
             skillsTerm : "Technologies:",
             skills : ["HTML", "CSS", "JavaScript", "Bootstrap", "Git"]
@@ -228,7 +228,7 @@ var resume = {
             name : "Portfolio Website",
             type : "Responsive Website",
             year : "summer 2017",
-            logo : "assets/images/projects/faa.png",
+            logo : "assets/images/projects/website-square.png",
             websitelink : "",
             github : "https://github.com/karachia/portfolioWebsite", 
             info : ["Developed my portfolio website from scratch to learn the basics of web development."],
@@ -652,14 +652,14 @@ resume.DisplayWork = function(){
 
 resume.DisplayProjects = function(){
     var counter = 1;
+    var HTMLgithubTempalte = '<a target="_blank" href=" %githublink% " class="mx-3 project-links"><i class="fa fa-github text-dark" aria-hidden="true"></i></a>';
+    var HTMLlinkTemplate = '<a target="_blank" href=" %websitelink% " class="mx-3 project-links"><i class="fa fa-external-link text-dark" aria-hidden="true"></i></a>';
     resume.projects.forEach(function(item) {
         var HTMLprojects = HTMLprojectsTemplate;
 
         var HTMLskills = "";
         var HTMLtags = "";
         var HTMLinfo = "";                                                
-        var HTMMLgithub = '<a target="_blank" href="%githublink%" class="mx-3 project-links"><i class="fa fa-github text-dark" aria-hidden="true"></i></a>';
-        var HTMLlink = '<a target="_blank" href="%websitelink%" class="mx-3 project-links"><i class="fa fa-external-link text-dark" aria-hidden="true"></i></a>';
         var HTMLallLinks = '';
         
         for  (var skill of item.skills){
@@ -687,24 +687,26 @@ resume.DisplayProjects = function(){
         }
 
         //links
-        if(item.websitelink == "" || item.websitelink == null){
-            HTMLprojects = HTMLprojects.replace("%websitelink%", "");
-            HTMLlink.replace("%websitelink%", "");            
-        }
-        else{
-            HTMLlink.replace("%websitelink%", item.websitelink);
+        if(item.websitelink.length > 0 && item.websitelink != null){
+            HTMLlink = HTMLlinkTemplate;
+            HTMLlink =  HTMLlink.replace("%websitelink%", item.websitelink);
             HTMLallLinks += HTMLlink;
             HTMLprojects = HTMLprojects.replace("%websitelink%", item.websitelink);
         }
-
-        //Github
-        if(item.github == "" || item.github == null){
-            HTMMLgithub.replace("%githublink%", "");
-        }else{
-            HTMMLgithub.replace("%githublink%", item.github);
-            HTMLallLinks += HTMMLgithub;
+        else{
+            HTMLprojects = HTMLprojects.replace("%websitelink%", "");
+            // HTMLlink.replace("%websitelink%", "");            
         }
 
+        //Github
+        if(item.github != null && item.github.length > 0){
+            var HTMLgithub = HTMLgithubTempalte;
+            HTMLgithub = HTMLgithub.replace("%githublink%", item.github);            
+            HTMLallLinks += HTMLgithub;
+        }else{
+            // HTMLgithub.replace("%githublink%", "");
+        }
+        // console.log(HTMLallLinks);
         //type
         // if(item.type != "" && item.type != null){
         //     HTMLprojects = HTMLprojects.replace("%type%", item.type);
