@@ -61,7 +61,7 @@ var resume = {
             websitelink : "https://itservices.usc.edu/",
             websitetext: "itservices.usc.edu",
             logo : "assets/images/its.png",
-            info : ["Managed and repackaged widnows software using InstallShield",  "Created unattended installation for over 500 workstations on campus", "Leveraged JScript to modify and configure applications and windows operating system"],
+            info : ["Managing and repackaged windows software using InstallShield",  "Creating unattended installation for over 500 workstations on campus", "Leveraging JScript to modify and configure applications and windows operating system"],
             skillsTerm : "Technologies:",
             skills : ["InstallShield", "JScript", "VMware", "VirtualBox", "Windows Registry"]
         },
@@ -171,7 +171,7 @@ var resume = {
             "Integrated SafeGuard with Azure Cognitive Services to detect safety violations to and warn the employees in real-time",
             "Wrote the movement detection and posture analysis algorithms to increase the accuracy of Azure’s predictions.",
             "Led the Training for SafeGuard with over 5000 photos taken from 40 employees to detect actions such as walking, sitting, standing, texting, calling, and objects such as people, phones, glasses, bottles, etc.",
-            "Successuly demoed SafeGuard at Interns' Project Expo."
+            "Demoed SafeGuard at Interns' Project Expo."
         ],
             logo : "assets/images/projects/safeguard.svg",
             websitelink : "",
@@ -383,7 +383,7 @@ var resume = {
             category : "Programming Languages",
             scales: [
                 {
-                    name: "Profecient",
+                    name: "Proficient",
                     skills: ["C++", "Java", "JavaScript", "HTML", "CSS"]
                 },
                 {
@@ -391,7 +391,7 @@ var resume = {
                     skills: ["C#", "C", "PHP", "MySQL"]
                 },
                 {
-                    name: "Begginer",
+                    name: "beginner",
                     skills: ["Python", "Swift", "MATLAB", "TypeScript"]
                 }
             ]
