@@ -264,7 +264,7 @@ var resume = {
 
     music: [
         {
-            title: "Whirling, Onward...",
+            title: "Whirling, Onward",
             instruments: "for Large Orchestra",
             year: "Jan. 2019",
             time : "14'", 
