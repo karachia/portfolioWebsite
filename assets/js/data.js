@@ -261,22 +261,23 @@ var resume = {
         }
         
     ],
-    
+
     music: [
         {
             title: "Whirling, Onward...",
             instruments: "for Large Orchestra",
             year: "Jan. 2019",
             time : "14'", 
-            soundcloud: "https://soundcloud.com/sinakarachiani/whirling-onward-midi-recording",
+            soundcloud: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/572005590&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true",
             info: "Written for USC Symphony"
         },
         {
+          
             title: "Carolyn",
             instruments: "for solo piano",
             year: "Oct. 2018",
             time : "5' 30\"", 
-            soundcloud: "https://soundcloud.com/sinakarachiani/carolyn",
+            soundcloud: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/531529713&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true",
             info: "In memory of Dr. Carolyn Bremer"
         },
         {
@@ -309,7 +310,7 @@ var resume = {
             instruments: "for Piano",
             year: "Nov. 2016",
             time : "12' 30\"", 
-            soundcloud: "https://soundcloud.com/sinakarachiani/the-persistence-of-memory",
+            soundcloud: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/531544188&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true",
         },
         {
             title: "And the Sun Rises Again",
