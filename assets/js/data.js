@@ -44,7 +44,7 @@ var resume = {
             websitetext: "www.sce.com",
             logo : "assets/images/edison.png",
             info : [
-                "Developed and deployed the Southern California Alexa skill for customer service."
+                "Developed and deployed the Southern California Alexa skill for customer service.",
                 "Developed, trained, and managed SafeGuard from scratch using <strong>C#</strong> and integrated it with <strong>Azure Cognitive Services</strong> to increase workplace safety. Later <strong>demoed</strong> SafeGuard at Intern’s Project Expo to <strong>over 300 employees</strong> and demonstrated the potential of AI.",
                 "Analyzed future use cases for machine learning and computer vision at SCE with regards to feasibility, efficacy, and cost-effectiveness.",
                 "Improving cybersecurity posture leveraging <strong>Chef</strong> to automate the configuration of Azure servers.",
