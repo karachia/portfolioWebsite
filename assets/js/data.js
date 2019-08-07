@@ -36,6 +36,41 @@ var resume = {
     work : [
         {
             tags : ["paid"],
+            position : "Software Engineering Intern",
+            company : "Northrop Grumman",
+            year : "May 2019 - Present",
+            location : "Redondo Beach, CA",
+            websitelink : "https://www.ngc.com/",
+            websitetext: "www.ngc.com",
+            logo : "assets/images/ngc.png",
+            info : [
+                "Using agile methodology over 6 two-week long sprints, I successfully completed 30 stories which correspond to the following: ",
+                "Developed a tool in python, named Pckl, to maximize the efficiency for documenting the infrastructure automation source code; Pckl searches and collects the variables from the code and formats them in tables for the developers to document. More importantly, Pckl merges the updated/modified source code with the existing documentation.",
+                "Conducted a trade study on testing frameworks, Robot Framework vs. Cucumber, and recommended Robot and integrated it with DevOps pipeline.",
+                "Created acceptance tests for acceptance testing of multiple software components.",   
+                "Developed a mkisofs module for Ansible to add the functionality to create and read ISO files through infrastructure as code."
+
+            ],
+            skillsTerm : "Skills/Technologies:",
+            skills : ["Development", "Python", "Ansible", "Robot Framework", "Jenkins", "Trade Study", "Linux", "Visio", "presentation", "Agile Methodology"]
+        },
+        {
+            tags : ["paid"],
+            position : "Software Engineer",
+            company : "Meta Nutrition (Startup)",
+            year : "June 2019 - Present",
+            location : "Los Angeles, CA",
+            websitelink : "",
+            websitetext: "",
+            logo : "assets/images/meta.jpg",
+            info : [
+                "Backend developer: responsibilities vary based on need but include managing the Firebase database and parsing and formatting hundreds of recipes to provide nutritional services to the consumers based on their goals and dietary restrictions through mobile/web apps."
+            ],
+            skillsTerm : "Skills/Technologies:",
+            skills : ["Firebase", "JavaScript", "Agile Methodology"]
+        },
+        {
+            tags : ["paid"],
             position : "Intern/Professional Trainee",
             company : "Southern California Edison",
             year : "May 2018 - Present",
@@ -403,7 +438,7 @@ var resume = {
             scales: [
                 {
                     name: "Proficient",
-                    skills: ["C++", "Java", "JavaScript", "HTML", "CSS"]
+                    skills: ["C++", "Java", "JavaScript", "HTML", "CSS", "Python"]
                 },
                 {
                     name: "Intermediate",
@@ -421,7 +456,7 @@ var resume = {
         {
             category: "Technologies",
             skills: [
-                "Bootstrap", "Google Maps API", "InstallShield", "Tomcat", "Chef", "Ionic Framework", "AJAX", "Windows Registry", "JDBC", "Maple"
+                "Robot Framework", "Ansible", "Firebase", "Bootstrap", "Google Maps API", "InstallShield", "Tomcat", "Chef", "Ionic Framework", "AJAX", "Windows Registry", "JDBC", "Maple"
             ]
         },
         {
