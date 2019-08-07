@@ -40,8 +40,8 @@ var resume = {
             company : "Northrop Grumman",
             year : "May 2019 - Present",
             location : "Redondo Beach, CA",
-            websitelink : "https://www.northropgrumman.com//",
-            websitetext: "www.northropgrumman.com/",
+            websitelink : "https://www.northropgrumman.com",
+            websitetext: "www.northropgrumman.com",
             logo : "assets/images/ngc.png",
             info : [
                 "Using agile methodology over 6 two-week long sprints, I successfully completed 30 stories which correspond to the following: ",
