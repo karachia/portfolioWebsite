@@ -523,6 +523,12 @@ var resume = {
     honors: [
         {
             tags : ["scholarship"],
+            name: "Bartlett Scholarship",
+            year: "2019",
+            info: ""           
+        },
+        {
+            tags : ["scholarship"],
             name: "Trojan Guild of Los Angeles Scholarship",
             year: "2018",
             info: "",            
