@@ -199,6 +199,36 @@ var resume = {
     
     projects: [
         {
+            tags : ["cs", "solo", "desktop", "IaC", "Python", "Ansible"],
+            name : "Bean&Leaf",
+            type : "Android Mobile App",
+            year : "Fall 2019",
+            info : ["Developed PCKL in Python to provide a framework for documentation of Ansible infrastructure automation source code in an efficient semi-automated way.",
+            "PCKL collects all the defined and gloabl variables from the code and displays them in a MARKDOWN table with information such as name, directory, value, type, and documentation.",
+            "If documentation already exists, PICKL merges them with any updates in the source code, thus, documentation is never lost.",
+            ],
+            logo : "assets/images/projects/beanleaf.png",
+            websitelink : "",
+            github : "",        
+            skillsTerm : "Technologies:",
+            skills : ["Python", "Ansible", "Markdown", "YAML", "Git", "Atlassian Suite" ]
+        },
+        {
+            tags : ["cs", "solo", "desktop", "IaC", "Python", "Ansible"],
+            name : "PCKL",
+            type : "CL Framework",
+            year : "Summer 2019",
+            info : ["Developed PCKL in Python to provide a framework for documentation of Ansible infrastructure automation source code in an efficient semi-automated way.",
+            "PCKL collects all the defined and gloabl variables from the code and displays them in a MARKDOWN table with information such as name, directory, value, type, and documentation.",
+            "If documentation already exists, PICKL merges them with any updates in the source code, thus, documentation is never lost.",
+            ],
+            logo : "assets/images/projects/pckl.gif",
+            websitelink : "",
+            github : "",        
+            skillsTerm : "Technologies:",
+            skills : ["Python", "Ansible", "Markdown", "YAML", "Git", "Atlassian Suite" ]
+        },
+        {
             tags : ["cs", "solo", "desktop", "machine learning"],
             name : "SafeGuard",
             type : "Windows App",
@@ -600,7 +630,6 @@ resume.DisplayHonors = function(){
 
 };
 
-
 resume.DisplaySkills = function(){
     var HTMLscaleTemplate  = '<div class="row justify-content-center mt-2 mb-2"> <div class="col-12 col-md-2 text-center text-md-right mt-8em">%name%:</div> <div class="col-12 col-md-8 text-center text-md-left"> %skills% </div> </div>';
     var HTMLallSkills = '<div class="container work-card">';
@@ -639,8 +668,6 @@ resume.DisplaySkills = function(){
     });    
     $("#skills").append(HTMLallSkills + "</div>");
 };
-
-
 
 resume.DisplayWork = function(){
     var counter = 1;
