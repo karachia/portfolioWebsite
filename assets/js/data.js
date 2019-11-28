@@ -196,33 +196,38 @@ var resume = {
             skills : ["Architecture", "Construction", "Teamwork", "planning", "Documentation", "Collaboration"]            
         }
     ],
+
+    
     
     projects: [
         {
-            tags : ["cs", "solo", "desktop", "IaC", "Python", "Ansible"],
+            tags : ["cs", "solo", "mobile", "app", "andoird", "Java"],
             name : "Bean&Leaf",
             type : "Android Mobile App",
             year : "Fall 2019",
-            info : ["Developed PCKL in Python to provide a framework for documentation of Ansible infrastructure automation source code in an efficient semi-automated way.",
-            "PCKL collects all the defined and gloabl variables from the code and displays them in a MARKDOWN table with information such as name, directory, value, type, and documentation.",
-            "If documentation already exists, PICKL merges them with any updates in the source code, thus, documentation is never lost.",
+            info : [
+                "Developed an Android app in a team of 4 on which users can find and purchase food and drinks.",
+                "They can also upgrade their account to become a merchant to have their own restaurants and cafes and see each of their restaurant's purchase histories.",
+                "I implemented the user profile page, account type functionality, homepage and the map interface, as well as many of the UI elements across the app.",
+                "Tested the UI with Espresso to ensure proper functionality."
             ],
             logo : "assets/images/projects/beanleaf.png",
             websitelink : "",
             github : "",        
             skillsTerm : "Technologies:",
-            skills : ["Python", "Ansible", "Markdown", "YAML", "Git", "Atlassian Suite" ]
+            skills : ["Andoird Studio", "Java", "Firebase", "Espresso", "Git", "Google Maps API" ]
         },
         {
             tags : ["cs", "solo", "desktop", "IaC", "Python", "Ansible"],
             name : "PCKL",
             type : "CL Framework",
             year : "Summer 2019",
-            info : ["Developed PCKL in Python to provide a framework for documentation of Ansible infrastructure automation source code in an efficient semi-automated way.",
-            "PCKL collects all the defined and gloabl variables from the code and displays them in a MARKDOWN table with information such as name, directory, value, type, and documentation.",
-            "If documentation already exists, PICKL merges them with any updates in the source code, thus, documentation is never lost.",
+            info : [
+                "Developed PCKL in Python to provide a framework for documentation of Ansible infrastructure automation source code in an efficient semi-automated way.",
+                "PCKL collects all the defined and gloabl variables from the code and displays them in a MARKDOWN table with information such as name, directory, value, type, and documentation.",
+                "If documentation already exists, PICKL merges them with any updates in the source code, thus, documentation is never lost."
             ],
-            logo : "assets/images/projects/pckl.gif",
+            logo : "assets/images/projects/pckl.svg",
             websitelink : "",
             github : "",        
             skillsTerm : "Technologies:",
