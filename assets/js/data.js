@@ -219,14 +219,15 @@ var resume = {
             type : "Fullstack Web Application",
             year : "Spring 2020",
             info : [
-                "PrevWorks is an online workers comp management system with interfaces both for employees and employers. The goal of PrevWorks is to prevent workplace injuries, and to help with employees' recovery in case of injuries. Other side benefits inlcude a simplified and stramlined injury reporting and tracking process both for employees and employers.",
-                "In this team project, I acted as the product manager and scrum master, and developed the entire front end for the web application.",
+                "PrevWorks is an online workers comp management system with interfaces for both employees and employers. The goal of PrevWorks is to prevent workplace injuries, and to help with employees' recovery in case of injuries. Other side benefits inlcude a simplified and streamlined injury reporting and tracking process for both employees and employers.",
+                "In this team project, I had the role of Product Manger as well as the Scrum Master and led the team to design and implement the features within our timeframe. I also communicated with stakeholders and organized and led the daily stand-ups, design meetings, and backlog refinement meetings.",
+                "I also designed and implemented the entire front end of the web app, for both the employee side and the employer."
             ],
             logo : "assets/images/projects/prevworks.png",
             websitelink : "",
             github : "",        
             skillsTerm : "Technologies:",
-            skills : ["Bootstrap", "HTML", "CSS", "JavaScript", "Node.js", "Agile" , "Git", "HealthCare", "Firebase DB"]
+            skills : ["Product Management", "Scrum Master", "Bootstrap", "HTML", "CSS", "JavaScript", "Node.js", "Agile" , "Git", "HealthCare", "Firebase DB"]
         },
         {
             tags : ["cs", "team", "mobile", "app", "andoird", "Java"],
