@@ -36,9 +36,24 @@ var resume = {
     work : [
         {
             tags : ["paid"],
+            position : "Software Engineer",
+            company : "Apple",
+            year : "June 2020",
+            location : "Redondo Beach, CA",
+            websitelink : "https://www.apple.com",
+            websitetext: "www.Apple.com",
+            logo : "assets/images/apple_rb.png",
+            info : [
+                ""
+            ],
+            skillsTerm : "Skills/Technologies:",
+            skills : ["Development", "Python", "Test Automation", "Git", "Bitbucket", "Apple Internal Tools"]
+        },
+        {
+            tags : ["paid"],
             position : "Software Engineering Intern",
             company : "Northrop Grumman",
-            year : "May 2019 - Present",
+            year : "May 2019 - June 2020",
             location : "Redondo Beach, CA",
             websitelink : "https://www.northropgrumman.com",
             websitetext: "www.northropgrumman.com",
@@ -58,7 +73,7 @@ var resume = {
             tags : ["paid"],
             position : "Software Engineer",
             company : "Meta Nutrition (Startup)",
-            year : "June 2019 - Present",
+            year : "June 2019 - Jan. 2020",
             location : "Los Angeles, CA",
             websitelink : "",
             websitetext: "",
@@ -201,7 +216,22 @@ var resume = {
     
     projects: [
         {
-            tags : ["cs", "solo", "mobile", "app", "andoird", "Java"],
+            tags : ["cs", "team", "web", "webapp"],
+            name : "",
+            type : "Fullstack Web Application",
+            year : "Spring 2020",
+            info : [
+                "PrevWorks is an online workers comp management system with interfaces both for employees and employers. The goal of PrevWorks is to prevent workplace injuries, and to help with employees' recovery in case of injuries. Other side benefits inlcude a simplified and stramlined injury reporting and tracking process both for employees and employers.",
+                "In this team project, I acted as the product manager and scrum master, and developed the entire front end for the web application.",
+            ],
+            logo : "assets/images/projects/prevworks.png",
+            websitelink : "",
+            github : "",        
+            skillsTerm : "Technologies:",
+            skills : ["Bootstrap", "HTML", "CSS", "JavaScript", "Node.js", "Agile" , "Git", "HealthCare", "Firebase DB"]
+        },
+        {
+            tags : ["cs", "team", "mobile", "app", "andoird", "Java"],
             name : "Bean&Leaf",
             type : "Android Mobile App",
             year : "Fall 2019",
@@ -334,6 +364,12 @@ var resume = {
     ],
 
     music: [
+        {
+            title: "Cool and Good",
+            instruments: "for Alto Sax, Piano, and Chamber Ensemble",
+            year: "Feb. 2020",
+            time : "18'"
+        },
         {
             title: "Whirling, Onward...",
             instruments: "for Large Orchestra",
@@ -521,6 +557,18 @@ var resume = {
     ],
 
     honors: [
+        {
+            tags : ["scholarship"],
+            name: "Renaissance Scholar and Prize Winner",
+            year: "2020",
+            info: "For my studies and double majoring in two different fields of Computer Science and Music Composition. The prize includes $10,000 toward Graduate studies or artistic endeavors and engraving my name at the Leavy Library.",     
+        },
+        {
+            tags : ["scholarship"],
+            name: "Discovery Scholar",
+            year: "2020",
+            info: "For a set of my musical compositions with the theme of self-exploration, conflict, and acceptance.",     
+        },
         {
             tags : ["scholarship"],
             name: "Bartlett Scholarship",
