@@ -42,9 +42,9 @@ var resume = {
             location : "Redondo Beach, CA",
             websitelink : "https://www.apple.com",
             websitetext: "www.Apple.com",
-            logo : "assets/images/apple_rb.png",
+            logo : "assets/images/apple.png",
             info : [
-                ""
+                "Automating Acceptance Testing for Media related components of iOS, macOS, tvOS, and watchOS."
             ],
             skillsTerm : "Skills/Technologies:",
             skills : ["Development", "Python", "Test Automation", "Git", "Bitbucket", "Apple Internal Tools"]
@@ -210,10 +210,8 @@ var resume = {
             skillsTerm : "Skills:",
             skills : ["Architecture", "Construction", "Teamwork", "planning", "Documentation", "Collaboration"]            
         }
-    ],
+    ], 
 
-    
-    
     projects: [
         {
             tags : ["cs", "team", "web", "webapp"],
