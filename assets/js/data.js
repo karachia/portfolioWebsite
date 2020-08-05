@@ -1,12 +1,12 @@
 var resume = {
-    "education" : [
+    education : [
         {
             university : "University of Southern California",
             degree : ["B.S. Computer Science", "B.M. Music Composition"],
             year : "2016-2019",
             location :  "Los Angeles, CA",
-            gpa : "3.94",
-            info : "Dean's List, Honors Program, TGLA Scholar",
+            gpa : "3.92",
+            info : "Dean's List, Renaissance Scholar and Prize Winner, Discovery Scholar, Barlett Scholar, TGLA Scholar",
             logo : "assets/images/usc.png",
             websitelink : "http://usc.edu",
             websitetext : "www.usc.edu"
@@ -561,7 +561,7 @@ var resume = {
             tags : ["scholarship"],
             name: "Renaissance Scholar and Prize Winner",
             year: "2020",
-            info: "For my studies and double majoring in two different fields of Computer Science and Music Composition. The prize includes $10,000 toward Graduate studies or artistic endeavors and engraving my name at the Leavy Library.",     
+            info: "For my studies and double majoring in two different fields of Computer Science and Music Composition. The prize includes $10,000 toward graduate studies or artistic endeavors and engraving my name on the wall of Leavy Library.",     
         },
         {
             tags : ["scholarship"],
