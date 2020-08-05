@@ -3,7 +3,7 @@ var resume = {
         {
             university : "University of Southern California",
             degree : ["B.S. Computer Science", "B.M. Music Composition"],
-            year : "2016-2019",
+            year : "2016-2020",
             location :  "Los Angeles, CA",
             gpa : "3.92",
             info : "Dean's List, Renaissance Scholar and Prize Winner, Discovery Scholar, Barlett Scholar, TGLA Scholar",
