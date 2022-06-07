@@ -38,8 +38,8 @@ var resume = {
             tags : ["paid"],
             position : "Software Engineer",
             company : "Apple",
-            year : "June 2020",
-            location : "Redondo Beach, CA",
+            year : "June 2020 - Present",
+            location : "Cupertino, CA",
             websitelink : "https://www.apple.com",
             websitetext: "www.Apple.com",
             logo : "assets/images/apple.png",
@@ -47,7 +47,7 @@ var resume = {
                 ":)"
             ],
             skillsTerm : "Skills/Technologies:",
-            skills : ["Development", "Python", "Test Automation", "Git", "Bitbucket", "Apple Internal Tools"]
+            skills : ["Development", "Python", "Swift", "Collaboration", "Package Development", "AR/VR", "Media Technologies", "Data Pipeline", "Device Cluster Management", "Test Automation", "Git", "Bitbucket", "Apple Internal Tools"]
         },
         {
             tags : ["paid"],
