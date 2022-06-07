@@ -44,7 +44,7 @@ var resume = {
             websitetext: "www.Apple.com",
             logo : "assets/images/apple.png",
             info : [
-                "Automating Acceptance Testing for Media related components of iOS, macOS, tvOS, and watchOS."
+                ":)"
             ],
             skillsTerm : "Skills/Technologies:",
             skills : ["Development", "Python", "Test Automation", "Git", "Bitbucket", "Apple Internal Tools"]
